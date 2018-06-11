@@ -194,43 +194,45 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__user_user_module__ = __webpack_require__("../../../../../src/app/user/user.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_home_body_home_body_component__ = __webpack_require__("../../../../../src/app/home/home-body/home-body.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contact_contact_body_contact_body_component__ = __webpack_require__("../../../../../src/app/contact/contact-body/contact-body.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__zelf_doen_zelf_doen_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__zelf_doen_zelf_doen_body_zelf_doen_body_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/zelf-doen-body.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__stellingen_stellingen_component__ = __webpack_require__("../../../../../src/app/stellingen/stellingen.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__stellingen_stellingen_body_stellingen_body_component__ = __webpack_require__("../../../../../src/app/stellingen/stellingen-body/stellingen-body.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__register_register_component__ = __webpack_require__("../../../../../src/app/register/register.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__ = __webpack_require__("../../../../../src/app/home/home-body/seksuele-intimidatie/seksuele-intimidatie.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__home_home_body_strafbaar_strafbaar_component__ = __webpack_require__("../../../../../src/app/home/home-body/strafbaar/strafbaar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__home_home_body_aangifte_aangifte_component__ = __webpack_require__("../../../../../src/app/home/home-body/aangifte/aangifte.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/slachtoffer/slachtoffer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__zelf_doen_zelf_doen_body_getuige_getuige_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/getuige/getuige.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__zelf_doen_zelf_doen_body_pleger_pleger_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/pleger/pleger.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__game_game_component__ = __webpack_require__("../../../../../src/app/game/game.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__game_question_modal_question_modal_component__ = __webpack_require__("../../../../../src/app/game/question-modal/question-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__game_code_modal_code_modal_component__ = __webpack_require__("../../../../../src/app/game/code-modal/code-modal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__game_game_display_game_display_component__ = __webpack_require__("../../../../../src/app/game/game-display/game-display.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__error_message_error_message_component__ = __webpack_require__("../../../../../src/app/error-message/error-message.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_question_service__ = __webpack_require__("../../../../../src/app/services/question.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__common_reducers_index__ = __webpack_require__("../../../../../src/app/common/reducers/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__user_user_module__ = __webpack_require__("../../../../../src/app/user/user.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__home_home_body_home_body_component__ = __webpack_require__("../../../../../src/app/home/home-body/home-body.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__contact_contact_body_contact_body_component__ = __webpack_require__("../../../../../src/app/contact/contact-body/contact-body.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__zelf_doen_zelf_doen_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__zelf_doen_zelf_doen_body_zelf_doen_body_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/zelf-doen-body.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__stellingen_stellingen_component__ = __webpack_require__("../../../../../src/app/stellingen/stellingen.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__stellingen_stellingen_body_stellingen_body_component__ = __webpack_require__("../../../../../src/app/stellingen/stellingen-body/stellingen-body.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__register_register_component__ = __webpack_require__("../../../../../src/app/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__ = __webpack_require__("../../../../../src/app/home/home-body/seksuele-intimidatie/seksuele-intimidatie.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__home_home_body_strafbaar_strafbaar_component__ = __webpack_require__("../../../../../src/app/home/home-body/strafbaar/strafbaar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__home_home_body_aangifte_aangifte_component__ = __webpack_require__("../../../../../src/app/home/home-body/aangifte/aangifte.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/slachtoffer/slachtoffer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__zelf_doen_zelf_doen_body_getuige_getuige_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/getuige/getuige.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__zelf_doen_zelf_doen_body_pleger_pleger_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/pleger/pleger.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__game_game_component__ = __webpack_require__("../../../../../src/app/game/game.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__game_question_modal_question_modal_component__ = __webpack_require__("../../../../../src/app/game/question-modal/question-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__game_code_modal_code_modal_component__ = __webpack_require__("../../../../../src/app/game/code-modal/code-modal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__game_game_display_game_display_component__ = __webpack_require__("../../../../../src/app/game/game-display/game-display.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__error_message_error_message_component__ = __webpack_require__("../../../../../src/app/error-message/error-message.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__services_question_service__ = __webpack_require__("../../../../../src/app/services/question.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__common_reducers_index__ = __webpack_require__("../../../../../src/app/common/reducers/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -276,30 +278,30 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__header_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__home_home_body_home_body_component__["a" /* HomeBodyComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__contact_contact_body_contact_body_component__["a" /* ContactBodyComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__zelf_doen_zelf_doen_body_zelf_doen_body_component__["a" /* ZelfDoenBodyComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__stellingen_stellingen_component__["a" /* StellingenComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__stellingen_stellingen_body_stellingen_body_component__["a" /* StellingenBodyComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__register_register_component__["a" /* RegisterComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__["a" /* SeksueleIntimidatieComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__home_home_body_strafbaar_strafbaar_component__["a" /* StrafbaarComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__home_home_body_aangifte_aangifte_component__["a" /* AangifteComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__["a" /* SlachtofferComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__zelf_doen_zelf_doen_body_getuige_getuige_component__["a" /* GetuigeComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__zelf_doen_zelf_doen_body_pleger_pleger_component__["a" /* PlegerComponent */],
-                __WEBPACK_IMPORTED_MODULE_27__game_game_component__["a" /* GameComponent */],
-                __WEBPACK_IMPORTED_MODULE_28__game_question_modal_question_modal_component__["a" /* QuestionModalComponent */],
-                __WEBPACK_IMPORTED_MODULE_29__game_code_modal_code_modal_component__["a" /* CodeModalComponent */],
-                __WEBPACK_IMPORTED_MODULE_30__game_game_display_game_display_component__["a" /* GameDisplayComponent */],
-                __WEBPACK_IMPORTED_MODULE_31__error_message_error_message_component__["a" /* ErrorMessageComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__header_header_component__["a" /* HeaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__footer_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__home_home_body_home_body_component__["a" /* HomeBodyComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__login_login_component__["a" /* LoginComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__["a" /* ContactComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__contact_contact_body_contact_body_component__["a" /* ContactBodyComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__zelf_doen_zelf_doen_body_zelf_doen_body_component__["a" /* ZelfDoenBodyComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__stellingen_stellingen_component__["a" /* StellingenComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__stellingen_stellingen_body_stellingen_body_component__["a" /* StellingenBodyComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__register_register_component__["a" /* RegisterComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__["a" /* SeksueleIntimidatieComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__home_home_body_strafbaar_strafbaar_component__["a" /* StrafbaarComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__home_home_body_aangifte_aangifte_component__["a" /* AangifteComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__["a" /* SlachtofferComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__zelf_doen_zelf_doen_body_getuige_getuige_component__["a" /* GetuigeComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__zelf_doen_zelf_doen_body_pleger_pleger_component__["a" /* PlegerComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__game_game_component__["a" /* GameComponent */],
+                __WEBPACK_IMPORTED_MODULE_29__game_question_modal_question_modal_component__["a" /* QuestionModalComponent */],
+                __WEBPACK_IMPORTED_MODULE_30__game_code_modal_code_modal_component__["a" /* CodeModalComponent */],
+                __WEBPACK_IMPORTED_MODULE_31__game_game_display_game_display_component__["a" /* GameDisplayComponent */],
+                __WEBPACK_IMPORTED_MODULE_32__error_message_error_message_component__["a" /* ErrorMessageComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
@@ -307,8 +309,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_6__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_5__ngrx_store__["b" /* StoreModule */].forRoot(__WEBPACK_IMPORTED_MODULE_35__common_reducers_index__["a" /* reducers */], {
+                __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_6__ngrx_store__["b" /* StoreModule */].forRoot(__WEBPACK_IMPORTED_MODULE_36__common_reducers_index__["a" /* reducers */], {
                     initialState: {
                         auth: null,
                         codes: null,
@@ -318,10 +320,10 @@ var AppModule = /** @class */ (function () {
                         errorMessage: '',
                     }
                 }),
-                __WEBPACK_IMPORTED_MODULE_7__user_user_module__["UserModule"]
+                __WEBPACK_IMPORTED_MODULE_8__user_user_module__["UserModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_32__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_33__services_question_service__["a" /* QuestionService */], __WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_33__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_34__services_question_service__["a" /* QuestionService */], __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */], { provide: __WEBPACK_IMPORTED_MODULE_5__angular_common__["LocationStrategy"], useClass: __WEBPACK_IMPORTED_MODULE_5__angular_common__["HashLocationStrategy"] }],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
