@@ -1899,7 +1899,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/portal/portal.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header [disableNav]=\"true\"></app-header>\r\n<div id=\"portal\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\">\r\n    <div class=\"contentBox\">\r\n    <p>Wat is seksuele intimidatie</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\">\r\n    <div class=\"contentBox\">\r\n    <p>Wat kan je zelf doen</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/feiten']\">\r\n    <div class=\"contentBox\">\r\n    <p>Feiten over seksuele intimidatie</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/contact']\">\r\n    <div class=\"contentBox\">\r\n    <p>Contact</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/game']\">\r\n    <div class=\"contentBox\">\r\n    <p>Speel de game</p>\r\n  </div>\r\n  </a>\r\n</div>\r\n<app-footer></app-footer>\r\n"
+module.exports = "<app-header></app-header>\r\n<div id=\"portal\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\">\r\n    <div class=\"contentBox\">\r\n    <p>Wat is seksuele intimidatie</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\">\r\n    <div class=\"contentBox\">\r\n    <p>Wat kan je zelf doen</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/feiten']\">\r\n    <div class=\"contentBox\">\r\n    <p>Feiten over seksuele intimidatie</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/contact']\">\r\n    <div class=\"contentBox\">\r\n    <p>Contact</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/game']\">\r\n    <div class=\"contentBox\">\r\n    <p>Speel de game</p>\r\n  </div>\r\n  </a>\r\n</div>\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
