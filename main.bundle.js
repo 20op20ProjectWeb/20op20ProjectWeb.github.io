@@ -318,6 +318,7 @@ var AppModule = /** @class */ (function () {
                         questionModal: false,
                         questionNumber: 0,
                         errorMessage: '',
+                        responsiveNagivation: false,
                     }
                 }),
                 __WEBPACK_IMPORTED_MODULE_8__user_user_module__["UserModule"]
@@ -413,6 +414,8 @@ function errorMessage(state, action) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__question_modal_reducer__ = __webpack_require__("../../../../../src/app/common/reducers/question-modal.reducer.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__question_number_reducer__ = __webpack_require__("../../../../../src/app/common/reducers/question-number.reducer.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__error_message_reducer__ = __webpack_require__("../../../../../src/app/common/reducers/error-message.reducer.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__responsive_navigation_reducer__ = __webpack_require__("../../../../../src/app/common/reducers/responsive-navigation.reducer.ts");
+
 
 
 
@@ -425,7 +428,8 @@ var reducers = {
     userNavigation: __WEBPACK_IMPORTED_MODULE_2__user_navigation_reducer__["a" /* userNavigation */],
     questionModal: __WEBPACK_IMPORTED_MODULE_3__question_modal_reducer__["a" /* questionModal */],
     questionNumber: __WEBPACK_IMPORTED_MODULE_4__question_number_reducer__["a" /* questionNumber */],
-    errorMessage: __WEBPACK_IMPORTED_MODULE_5__error_message_reducer__["a" /* errorMessage */]
+    errorMessage: __WEBPACK_IMPORTED_MODULE_5__error_message_reducer__["a" /* errorMessage */],
+    responsiveNagivation: __WEBPACK_IMPORTED_MODULE_6__responsive_navigation_reducer__["a" /* responsiveNagivation */]
 };
 
 
@@ -457,6 +461,23 @@ function questionNumber(state, action) {
     switch (action.type) {
         case 'SET_QUESTION_NUMBER':
             return action.payload;
+        default:
+            return state;
+    }
+}
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/common/reducers/responsive-navigation.reducer.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = responsiveNagivation;
+function responsiveNagivation(state, action) {
+    switch (action.type) {
+        case 'SET_NAVIGATION':
+            return state = !state;
         default:
             return state;
     }
@@ -699,7 +720,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"contact\">\r\n\t<p>Contact met Stad Antwerpen</p>\r\n\r\n\t<div class=\"contact-icons\">\r\n\t\t<a href=\"\" class=\"fa fa-envelope-o\"><span>Contacteer ons</span></a>\r\n\t</div>\r\n</div>\r\n\r\n\r\n<div class=\"media\">\r\n\t<p>Vind ons op</p>\r\n\r\n\t<div class=\"media-icons\">\r\n\t\t<a href=\"https://www.facebook.com/stad.antwerpen\" class=\"fa fa-facebook\"></a>\r\n\t\t<a href=\"https://twitter.com/Stad_Antwerpen\" class=\"fa fa-twitter\"></a>\r\n\t\t<a href=\"https://www.instagram.com/stad_antwerpen\" class=\"fa fa-instagram\"></a>\r\n\t\t<a href=\"https://www.linkedin.com/company/stad-antwerpen\" class=\"fa fa-linkedin\"></a>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"contact\">\r\n\t<p>Contact met Stad Antwerpen</p>\r\n\r\n\t<div class=\"contact-icons\">\r\n\t\t<a href=\"\" class=\"fa fa-envelope-o\"><span>Contacteer ons</span></a>\r\n\t</div>\r\n</div>\r\n\r\n\r\n<div class=\"media\">\r\n\t<p>Vind ons op</p>\r\n\r\n\t<div class=\"media-icons\">\r\n\t\t<a target=\"_blank\" href=\"https://www.facebook.com/stad.antwerpen\" class=\"fa fa-facebook\"></a>\r\n\t\t<a target=\"_blank\" href=\"https://twitter.com/Stad_Antwerpen\" class=\"fa fa-twitter\"></a>\r\n\t\t<a target=\"_blank\" href=\"https://www.instagram.com/stad_antwerpen\" class=\"fa fa-instagram\"></a>\r\n\t\t<a target=\"_blank\" href=\"https://www.linkedin.com/company/stad-antwerpen\" class=\"fa fa-linkedin\"></a>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1331,7 +1352,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "a {\r\n\tcolor: #000;\r\n}\r\n\r\nh1 {\r\n\tcolor: #fff;\r\n\tfont-size: 70px;\r\n\tmargin: 100px 0 20px 120px;\r\n}\r\n\r\nh1:hover {\r\n  color: #0064B4;\r\n}\r\n\r\n.background {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/images/banner.jpg")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n\tposition: absolute;\r\n  top: 2.85em;\r\n\tleft: 0;\r\n\tz-index: -1;\r\n\twidth: 100%;\r\n  height: 23.25rem;\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n}\r\n\r\n.banner {\r\n  height: 23.25rem;\r\n  overflow-y: hidden;\r\n}\r\n\r\n.height-zero {\r\n  -webkit-animation: hide-img 0.5s linear forwards;\r\n          animation: hide-img 0.5s linear forwards;\r\n  -webkit-animation-delay: 0.1s;\r\n          animation-delay: 0.1s;\r\n}\r\n\r\n@-webkit-keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n    top: 7.65em !important;\r\n  }\r\n\r\n  .topnav {\r\n  \ttop: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 15px;\r\n}\r\n\r\n.topnav a {\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tpadding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.botnav {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\tfont-size: 1rem;\r\n\ttext-align: center;\r\n\tmargin-top: 80px;\r\n\tmargin-bottom: 10px;\r\n  font-weight: 700;\r\n  padding-bottom: 25px;\r\n  border-bottom: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.botnav a {\r\n  display: table-cell;\r\n  margin: 0;\r\n  padding: 15px 15px 18px 15px;\r\n}\r\n\r\n.botnav a {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.botnav a:hover, .botnav a.active{\r\n  color: #0064B4;\r\n  border-bottom: 3px solid #0064B4;\r\n  padding: 15px;\r\n}\r\n\r\n.topnav input[type='search'] {\r\n  height: 48px;\r\n  width: 0;\r\n  padding: 0;\r\n  margin-top: -17px;\r\n  font-size: inherit;\r\n  border: 0;\r\n  background: #E5E5E6;\r\n  -webkit-transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n  transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .topnav input[type='search']{\r\n    height: 50px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 940px) and (max-width: 1200px) {\r\n    h1 {\r\n      width: 50%;\r\n      margin-top: 10px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    h1 {\r\n      font-size: 40px;\r\n      height: auto;\r\n      margin-top: 160px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .topnav a {\r\n      font-size: 0;\r\n      padding-top: 31px;\r\n      padding-bottom: 19px;\r\n    }\r\n\r\n    .topnav i {\r\n      font-size: 17px;\r\n    }\r\n\r\n    h1 {\r\n      margin-top: 45px;\r\n      width: 50%;\r\n    }\r\n\r\n    .background {\r\n      height: 18rem;\r\n    }\r\n\r\n    @-webkit-keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n\r\n    @keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n\r\n    .botnav {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n      margin-top: 0px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    h1 {\r\n      margin-left: 80px;\r\n      margin-top: -10px;\r\n      width: 40%;\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, "a {\r\n\tcolor: #000;\r\n}\r\n\r\nh1 {\r\n\tcolor: #fff;\r\n\tfont-size: 70px;\r\n\tmargin: 100px 0 20px 120px;\r\n}\r\n\r\nh1:hover {\r\n  color: #0064B4;\r\n}\r\n\r\n.background {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/images/banner.jpg")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n\tposition: absolute;\r\n  top: 2.85em;\r\n\tleft: 0;\r\n\tz-index: -1;\r\n\twidth: 100%;\r\n  height: 23.25rem;\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n}\r\n\r\n.banner {\r\n  height: 23.25rem;\r\n  overflow-y: hidden;\r\n}\r\n\r\n.height-zero {\r\n  -webkit-animation: hide-img 0.5s linear forwards;\r\n          animation: hide-img 0.5s linear forwards;\r\n  -webkit-animation-delay: 0.1s;\r\n          animation-delay: 0.1s;\r\n}\r\n\r\n@-webkit-keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n    top: 7.65em !important;\r\n  }\r\n\r\n  .topnav {\r\n  \ttop: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 15px;\r\n}\r\n\r\n.topnav a {\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tpadding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.botnav {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\tfont-size: 1rem;\r\n\ttext-align: center;\r\n\tmargin-top: 80px;\r\n\tmargin-bottom: 10px;\r\n  font-weight: 700;\r\n  padding-bottom: 25px;\r\n  border-bottom: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.botnav a {\r\n  display: table-cell;\r\n  margin: 0;\r\n  padding: 15px 15px 18px 15px;\r\n}\r\n\r\n.botnav a {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.botnav a:hover, .botnav a.active{\r\n  color: #0064B4;\r\n  border-bottom: 3px solid #0064B4;\r\n  padding: 15px;\r\n}\r\n\r\n.topnav input[type='search'] {\r\n  height: 48px;\r\n  width: 0;\r\n  padding: 0;\r\n  margin-top: -17px;\r\n  font-size: inherit;\r\n  border: 0;\r\n  background: #E5E5E6;\r\n  -webkit-transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n  transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n}\r\n\r\n#hamburger {\r\n  display: none;\r\n  position: fixed;\r\n  top: 20px;\r\n  left: 20px;\r\n\r\n  width: 25px;\r\n  height: 20px;\r\n  -webkit-transform: rotate(0deg);\r\n  transform: rotate(0deg);\r\n  -webkit-transition: .25s ease-in-out;\r\n  transition: .25s ease-in-out;\r\n  cursor: pointer;\r\n\r\n  z-index: 4;\r\n}\r\n\r\n#hamburger span {\r\n  display: block;\r\n  position: absolute;\r\n  height: 3px;\r\n  width: 100%;\r\n  border-radius: 9px;\r\n  opacity: 1;\r\n  -webkit-transform: rotate(0deg);\r\n  transform: rotate(0deg);\r\n  -webkit-transition: .25s ease-in-out;\r\n  transition: .25s ease-in-out;\r\n}\r\n\r\n#hamburger span:nth-child(1) {\r\ntop: 0px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger span:nth-child(2) {\r\ntop: 7px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger span:nth-child(3) {\r\ntop: 14px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger.open span:nth-child(1) {\r\n-webkit-transform: rotate(45deg);\r\ntransform: rotate(45deg);\r\ntop: -3px;\r\n}\r\n\r\n#hamburger.open span:nth-child(2) {\r\nwidth: 0%;\r\nopacity: 0;\r\n}\r\n\r\n#hamburger.open span:nth-child(3) {\r\n-webkit-transform: rotate(-45deg);\r\ntransform: rotate(-45deg);\r\ntop: 14px;\r\n}\r\n\r\n.burger-span {\r\n  background: rgb(49, 49, 49);\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .topnav input[type='search']{\r\n    height: 50px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 940px) and (max-width: 1200px) {\r\n    h1 {\r\n      width: 50%;\r\n      margin-top: 10px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    h1 {\r\n      font-size: 40px;\r\n      height: auto;\r\n      margin-top: 160px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 736px) {\r\n  #hamburger {\r\n    display: block;\r\n  }\r\n\r\n  .botnav {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: #fff;\r\n    z-index: 2;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    margin: 0;\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n    -webkit-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n  .show {\r\n    opacity: 1;\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n  }\r\n\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .topnav a {\r\n      font-size: 0;\r\n      padding-top: 31px;\r\n      padding-bottom: 19px;\r\n    }\r\n\r\n    .topnav i {\r\n      font-size: 17px;\r\n    }\r\n\r\n    h1 {\r\n      margin-top: 45px;\r\n      width: 50%;\r\n    }\r\n\r\n    .background {\r\n      height: 18rem;\r\n    }\r\n\r\n    @-webkit-keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n\r\n    @keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    h1 {\r\n      margin-left: 80px;\r\n      margin-top: -10px;\r\n      width: 40%;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -1344,7 +1365,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn() else isAuth\">\r\n    <input type=\"search\" title=\"search\" placeholder=\"Zoeken... \" #searchBar/><!--\r\n --><a (click)=\"toggleSearchBar()\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></a><!--\r\n --><a [routerLink]=\"['/register']\"><i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i> Registreren</a><!--\r\n --><a [routerLink]=\"['/login']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Aanmelden</a>\r\n\t</div>\r\n\t<ng-template #isAuth>\r\n    <a [routerLink]=\"['/user']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> {{name}}</a><!--\r\n --><a (click)=\"logout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\r\n\t</ng-template>\r\n</div>\r\n\r\n\r\n<div class=\"banner\" [ngClass]=\"disableImg ? 'height-zero' : ''\">\r\n\t<img class=\"logo\" src=\"assets/images/Logo_Antwerpen.jpg\">\r\n\t<div class=\"background\" [ngClass]=\"disableImg ? 'height-zero' : ''\" ></div>\r\n\t<h1>Stop seksuele intimidatie</h1>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"botnav\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\">Wat is seksuele intimidatie?</a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\" routerLinkActive=\"active\">Wat kan je zelf doen?</a>\r\n  <a [routerLink]=\"['/feiten']\" routerLinkActive=\"active\">Feiten</a>\r\n  <a [routerLink]=\"['/contact']\" routerLinkActive=\"active\">Contact</a>\r\n  <a [routerLink]=\"['/game']\" routerLinkActive=\"active\">Game</a>\r\n</div>\r\n\r\n<script>\r\n\r\n\r\n</script>\r\n"
+module.exports = "<div id=\"hamburger\"[ngClass]=\"visible ? 'open' : ''\" (click)=\"toggleNav()\">\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n</div>\r\n\r\n<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn() else isAuth\">\r\n    <input type=\"search\" title=\"search\" placeholder=\"Zoeken... \" #searchBar/><!--\r\n --><a (click)=\"toggleSearchBar()\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></a><!--\r\n --><a [routerLink]=\"['/register']\"><i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i> Registreren</a><!--\r\n --><a [routerLink]=\"['/login']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Aanmelden</a>\r\n\t</div>\r\n\t<ng-template #isAuth>\r\n    <a [routerLink]=\"['/user']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> {{name}}</a><!--\r\n --><a (click)=\"logout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\r\n\t</ng-template>\r\n</div>\r\n\r\n\r\n<div class=\"banner\" [ngClass]=\"disableImg ? 'height-zero' : ''\">\r\n\t<img class=\"logo\" src=\"assets/images/Logo_Antwerpen.jpg\">\r\n\t<div class=\"background\" [ngClass]=\"disableImg ? 'height-zero' : ''\" ></div>\r\n\t<h1>Stop seksuele intimidatie</h1>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"botnav\" [ngClass]=\"visible ? 'show' : ''\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat is seksuele intimidatie?</a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat kan je zelf doen?</a>\r\n  <a [routerLink]=\"['/feiten']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Feiten</a>\r\n  <a [routerLink]=\"['/contact']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Contact</a>\r\n  <a [routerLink]=\"['/game']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Game</a>\r\n</div>\r\n\r\n<script>\r\n\r\n\r\n</script>\r\n"
 
 /***/ }),
 
@@ -1355,6 +1376,7 @@ module.exports = "<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1366,12 +1388,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent(authService) {
+    function HeaderComponent(authService, store) {
         var _this = this;
         this.authService = authService;
+        this.store = store;
         this.name = 'User';
+        this.visible = false;
         this.disableImg = false;
+        store.select('responsiveNagivation').subscribe(function (v) { return _this.visible = v; });
         this.authService.authObj.subscribe(function (v) {
             if (v && v.firstname) {
                 _this.name = v.firstname;
@@ -1393,6 +1419,9 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent.prototype.logout = function () {
         this.authService.logout();
     };
+    HeaderComponent.prototype.toggleNav = function () {
+        this.store.dispatch({ type: 'SET_NAVIGATION' });
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('searchBar'),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
@@ -1405,9 +1434,17 @@ var HeaderComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-header',
             template: __webpack_require__("../../../../../src/app/header/header.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/header/header.component.css")]
+            styles: [__webpack_require__("../../../../../src/app/header/header.component.css")],
+            animations: [
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["trigger"])('openNavigation', [
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["state"])('0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["style"])({ transform: 'translateX(-50%) translateY(-50%) scale(0)', opacity: '0' })),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["state"])('1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["style"])({ transform: 'translateX(-50%) translateY(-50%) scale(1)', opacity: '1' })),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["transition"])('0 => 1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["animate"])('300ms ease-in')),
+                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["transition"])('1 => 0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["animate"])('300ms ease-out')),
+                ]),
+            ]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["a" /* Store */]])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -1498,7 +1535,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home-body/home-body.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"left\">\r\n\t<a [routerLink]=\"['/wat-is-seksuele-intimidatie/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\">Wat is seksuele intimidatie?<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-is-seksuele-intimidatie/welk-gedrag-is-strafbaar']\" routerLinkActive=\"active\">Welk gedrag is strafbaar?<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-is-seksuele-intimidatie/hoe-kan-ik-aangifte-doen']\" routerLinkActive=\"active\">Hoe kan ik aangifte doen?<i class=\"fa fa-chevron-right\"></i></a>\r\n</div>\r\n\r\n<div class=\"right\">\r\n  <router-outlet name='content'></router-outlet>\r\n  <!--<app-home-body-intimidatie></app-home-body-intimidatie>\r\n  <app-home-body-strafbaar></app-home-body-strafbaar>\r\n  <app-home-body-aangifte></app-home-body-aangifte>-->\r\n</div>\r\n"
+module.exports = "<div class=\"subnav\">\r\n\t<a [routerLink]=\"['/wat-is-seksuele-intimidatie/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\">Wat is seksuele intimidatie?<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-is-seksuele-intimidatie/welk-gedrag-is-strafbaar']\" routerLinkActive=\"active\">Welk gedrag is strafbaar?<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-is-seksuele-intimidatie/hoe-kan-ik-aangifte-doen']\" routerLinkActive=\"active\">Hoe kan ik aangifte doen?<i class=\"fa fa-chevron-right\"></i></a>\r\n</div>\r\n\r\n<div class=\"right\">\r\n  <router-outlet name='content'></router-outlet>\r\n  <!--<app-home-body-intimidatie></app-home-body-intimidatie>\r\n  <app-home-body-strafbaar></app-home-body-strafbaar>\r\n  <app-home-body-aangifte></app-home-body-aangifte>-->\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2124,7 +2161,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "div {\r\n\twidth: 45%;\r\n\tmargin: 0 75px 20px 75px;\r\n}\r\n\r\nh2 {\r\n  margin-top: 1rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\np {\r\n    font-size: 1.25rem;\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    div {\r\n    \twidth: 50%;\r\n    \tmargin-left: 10px;\r\n    \tmargin-right: 0;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    p {\r\n        font-size: 1rem;\r\n    }\r\n\r\n    div {\r\n        width: 100%;\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, "h1 {\r\n    width: 100%;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\ndiv {\r\n\twidth: 45%;\r\n\tmargin: 0 75px 20px 75px;\r\n}\r\n\r\nh2 {\r\n  margin-top: 1rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\np {\r\n    font-size: 1.25rem;\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    h1 {\r\n        margin-left: 10px;\r\n        text-align: center;\r\n    }\r\n\r\n    div {\r\n    \twidth: 50%;\r\n    \tmargin-left: 10px;\r\n    \tmargin-right: 0;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    p {\r\n        font-size: 1rem;\r\n    }\r\n\r\n    div {\r\n        width: 100%;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -3026,7 +3063,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/zelf-doen/zelf-doen-body/zelf-doen-body.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"left\">\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen/als-slachtoffer']\" routerLinkActive=\"active\">Als slachtoffer<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-kan-je-zelf-doen/als-getuige']\" routerLinkActive=\"active\">Als getuige<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-kan-je-zelf-doen/als-pleger']\" routerLinkActive=\"active\">Als pleger<i class=\"fa fa-chevron-right\"></i></a>\r\n</div>\r\n\r\n<div class=\"right\">\r\n  <router-outlet name='content'></router-outlet>\r\n</div>\r\n"
+module.exports = "<div class=\"subnav\">\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen/als-slachtoffer']\" routerLinkActive=\"active\">Als slachtoffer<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-kan-je-zelf-doen/als-getuige']\" routerLinkActive=\"active\">Als getuige<i class=\"fa fa-chevron-right\"></i></a>\r\n\t<a [routerLink]=\"['/wat-kan-je-zelf-doen/als-pleger']\" routerLinkActive=\"active\">Als pleger<i class=\"fa fa-chevron-right\"></i></a>\r\n</div>\r\n\r\n<div class=\"right\">\r\n  <router-outlet name='content'></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
