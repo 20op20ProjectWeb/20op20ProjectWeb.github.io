@@ -31,20 +31,21 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register_component__ = __webpack_require__("../../../../../src/app/register/register.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__zelf_doen_zelf_doen_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stellingen_stellingen_component__ = __webpack_require__("../../../../../src/app/stellingen/stellingen.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__ = __webpack_require__("../../../../../src/app/home/home-body/seksuele-intimidatie/seksuele-intimidatie.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_body_strafbaar_strafbaar_component__ = __webpack_require__("../../../../../src/app/home/home-body/strafbaar/strafbaar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_body_aangifte_aangifte_component__ = __webpack_require__("../../../../../src/app/home/home-body/aangifte/aangifte.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/slachtoffer/slachtoffer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__zelf_doen_zelf_doen_body_getuige_getuige_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/getuige/getuige.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__zelf_doen_zelf_doen_body_pleger_pleger_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/pleger/pleger.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__game_game_component__ = __webpack_require__("../../../../../src/app/game/game.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__portal_portal_component__ = __webpack_require__("../../../../../src/app/portal/portal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register_component__ = __webpack_require__("../../../../../src/app/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__zelf_doen_zelf_doen_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__stellingen_stellingen_component__ = __webpack_require__("../../../../../src/app/stellingen/stellingen.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__ = __webpack_require__("../../../../../src/app/home/home-body/seksuele-intimidatie/seksuele-intimidatie.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_body_strafbaar_strafbaar_component__ = __webpack_require__("../../../../../src/app/home/home-body/strafbaar/strafbaar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_home_body_aangifte_aangifte_component__ = __webpack_require__("../../../../../src/app/home/home-body/aangifte/aangifte.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/slachtoffer/slachtoffer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__zelf_doen_zelf_doen_body_getuige_getuige_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/getuige/getuige.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__zelf_doen_zelf_doen_body_pleger_pleger_component__ = __webpack_require__("../../../../../src/app/zelf-doen/zelf-doen-body/pleger/pleger.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__game_game_component__ = __webpack_require__("../../../../../src/app/game/game.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -67,22 +68,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     { path: '', redirectTo: 'wat-is-seksuele-intimidatie/wat-is-seksuele-intimidatie', pathMatch: 'full' },
     { path: 'wat-is-seksuele-intimidatie', redirectTo: 'wat-is-seksuele-intimidatie/wat-is-seksuele-intimidatie', pathMatch: 'full' },
-    { path: 'wat-is-seksuele-intimidatie/wat-is-seksuele-intimidatie', component: __WEBPACK_IMPORTED_MODULE_4__home_home_component__["a" /* HomeComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_8__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__["a" /* SeksueleIntimidatieComponent */], outlet: 'content' }] },
-    { path: 'wat-is-seksuele-intimidatie/welk-gedrag-is-strafbaar', component: __WEBPACK_IMPORTED_MODULE_4__home_home_component__["a" /* HomeComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_9__home_home_body_strafbaar_strafbaar_component__["a" /* StrafbaarComponent */], outlet: 'content' }] },
-    { path: 'wat-is-seksuele-intimidatie/hoe-kan-ik-aangifte-doen', component: __WEBPACK_IMPORTED_MODULE_4__home_home_component__["a" /* HomeComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_10__home_home_body_aangifte_aangifte_component__["a" /* AangifteComponent */], outlet: 'content' }] },
-    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_2__login_login_component__["a" /* LoginComponent */], pathMatch: 'full' },
-    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_3__register_register_component__["a" /* RegisterComponent */], pathMatch: 'full' },
+    { path: 'wat-is-seksuele-intimidatie/wat-is-seksuele-intimidatie', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_9__home_home_body_seksuele_intimidatie_seksuele_intimidatie_component__["a" /* SeksueleIntimidatieComponent */], outlet: 'content' }] },
+    { path: 'wat-is-seksuele-intimidatie/welk-gedrag-is-strafbaar', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_10__home_home_body_strafbaar_strafbaar_component__["a" /* StrafbaarComponent */], outlet: 'content' }] },
+    { path: 'wat-is-seksuele-intimidatie/hoe-kan-ik-aangifte-doen', component: __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_11__home_home_body_aangifte_aangifte_component__["a" /* AangifteComponent */], outlet: 'content' }] },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_3__login_login_component__["a" /* LoginComponent */], pathMatch: 'full' },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_4__register_register_component__["a" /* RegisterComponent */], pathMatch: 'full' },
     { path: 'wat-kan-je-zelf-doen', redirectTo: 'wat-kan-je-zelf-doen/als-slachtoffer', pathMatch: 'full' },
-    { path: 'wat-kan-je-zelf-doen/als-slachtoffer', component: __WEBPACK_IMPORTED_MODULE_5__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_11__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__["a" /* SlachtofferComponent */], outlet: 'content' }] },
-    { path: 'wat-kan-je-zelf-doen/als-getuige', component: __WEBPACK_IMPORTED_MODULE_5__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_12__zelf_doen_zelf_doen_body_getuige_getuige_component__["a" /* GetuigeComponent */], outlet: 'content' }] },
-    { path: 'wat-kan-je-zelf-doen/als-pleger', component: __WEBPACK_IMPORTED_MODULE_5__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_13__zelf_doen_zelf_doen_body_pleger_pleger_component__["a" /* PlegerComponent */], outlet: 'content' }] },
-    { path: 'feiten', component: __WEBPACK_IMPORTED_MODULE_6__stellingen_stellingen_component__["a" /* StellingenComponent */], pathMatch: 'full' },
-    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */], pathMatch: 'full' },
-    { path: 'user', loadChildren: './user/user.module#UserModule', canActivate: [__WEBPACK_IMPORTED_MODULE_15__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'game', component: __WEBPACK_IMPORTED_MODULE_14__game_game_component__["a" /* GameComponent */], pathMatch: 'full' },
+    { path: 'wat-kan-je-zelf-doen/als-slachtoffer', component: __WEBPACK_IMPORTED_MODULE_6__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_12__zelf_doen_zelf_doen_body_slachtoffer_slachtoffer_component__["a" /* SlachtofferComponent */], outlet: 'content' }] },
+    { path: 'wat-kan-je-zelf-doen/als-getuige', component: __WEBPACK_IMPORTED_MODULE_6__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_13__zelf_doen_zelf_doen_body_getuige_getuige_component__["a" /* GetuigeComponent */], outlet: 'content' }] },
+    { path: 'wat-kan-je-zelf-doen/als-pleger', component: __WEBPACK_IMPORTED_MODULE_6__zelf_doen_zelf_doen_component__["a" /* ZelfDoenComponent */], pathMatch: 'full', children: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_14__zelf_doen_zelf_doen_body_pleger_pleger_component__["a" /* PlegerComponent */], outlet: 'content' }] },
+    { path: 'feiten', component: __WEBPACK_IMPORTED_MODULE_7__stellingen_stellingen_component__["a" /* StellingenComponent */], pathMatch: 'full' },
+    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], pathMatch: 'full' },
+    { path: 'user', loadChildren: './user/user.module#UserModule', canActivate: [__WEBPACK_IMPORTED_MODULE_16__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'game', component: __WEBPACK_IMPORTED_MODULE_15__game_game_component__["a" /* GameComponent */], pathMatch: 'full' },
+    { path: 'portal', component: __WEBPACK_IMPORTED_MODULE_2__portal_portal_component__["a" /* PortalComponent */], pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -226,6 +229,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__services_question_service__ = __webpack_require__("../../../../../src/app/services/question.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__common_reducers_index__ = __webpack_require__("../../../../../src/app/common/reducers/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__portal_portal_component__ = __webpack_require__("../../../../../src/app/portal/portal.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -272,6 +276,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 // reducers
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -302,6 +307,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_30__game_code_modal_code_modal_component__["a" /* CodeModalComponent */],
                 __WEBPACK_IMPORTED_MODULE_31__game_game_display_game_display_component__["a" /* GameDisplayComponent */],
                 __WEBPACK_IMPORTED_MODULE_32__error_message_error_message_component__["a" /* ErrorMessageComponent */],
+                __WEBPACK_IMPORTED_MODULE_37__portal_portal_component__["a" /* PortalComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
@@ -849,10 +855,11 @@ var CodeModalComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return scene3a; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return scene3b; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return scene4; });
+/* unused harmony export scene5 */
 var scene1 = [
     { dialog: "Ugh, het is terug maandag. Waarom moet school zo vroeg beginnen?",
         by: "mc" },
-    { dialog: "NAAM, kom je naar beneden? Ontbijt is klaar en het is bijna tijd voor school.",
+    { dialog: "MC, kom je naar beneden? Ontbijt is klaar en het is bijna tijd voor school.",
         by: "mom" },
     { dialog: "Ben direct beneden, ik moet me nog aankleden.",
         by: "mc" },
@@ -869,8 +876,6 @@ var scene2 = [
     { dialog: "MC zit in de klas met nog 12 andere kinderen, de leerkracht is namen aan het afroepen. De leerkracht roept jouw naam en je antwoordt: “Ben er.”",
         by: "narrator" },
     { dialog: "De leerkracht gaat de rest van de namen af en je zit maar naar buiten te staren.",
-        by: "narrator" },
-    { dialog: "Net buiten de schoolpoort zie je een jongen die tegen de muur wordt geduwd door twee grotere jongens.",
         by: "narrator" },
     { dialog: "Net buiten de schoolpoort zie je een jongen die tegen de muur wordt geduwd door twee grotere jongens.",
         by: "narrator" },
@@ -939,10 +944,35 @@ var scene3b = [
 ];
 var scene4 = [
     {
-        dialog: "end",
-        by: "end"
+        dialog: "De les begint terug, maar de leerkracht is nog niet begonnen met de les.",
+        by: "narrator"
+    },
+    {
+        dialog: "Wel we hebben iemand nieuw die in onze klas komt zitten. Dit is Naomi.",
+        by: "teacher"
+    },
+    {
+        dialog: "Naomi loopt de klas binnen, hoofd naar beneden is precies heel verlegen.",
+        by: "narrator"
+    },
+    {
+        dialog: "Hallo, ik ben Naomi.",
+        by: "naomi"
+    },
+    {
+        dialog: "Wel er is plaats naast MC.  Je kan daar zitten.",
+        by: "teacher"
+    },
+    {
+        dialog: "Naomi pakt haar rugzak op en komt naast jou zitten.",
+        by: "narrator"
+    },
+    {
+        dialog: "En hoe zit het in deze klas? Dingen die ik moet weten?",
+        by: "naomi"
     }
 ];
+var scene5 = [];
 // {
 //   dialog: "",
 //   by: ""
@@ -958,7 +988,8 @@ var scene4 = [
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return questions; });
 var questions = [
     ['Je blijft bij je vrienden.', 'Je gaat naar de jongen toe.'],
-    ['Het is normaal dat ze je pesten, homo!', 'Voor mij maakt het niet uit op wie je valt']
+    ['Het is normaal dat ze je pesten, homo!', 'Voor mij maakt het niet uit op wie je valt'],
+    ['Wel, hoeveel tijd heb je.', 'Iedereen is saai, behalve ik, I’m the coolest. *knipoog* en begint met lachen', 'Eh, niets belangrijk.']
 ];
 
 
@@ -973,7 +1004,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#canvas {\r\n  width: calc(960px * 0.7);\r\n  height: calc(678px * 0.7);\r\n  position: relative;\r\n  margin: 0 auto;\r\n  /* transform: translateX(-50%) translateY(-50%); */\r\n  border: 1px solid #000;\r\n  background-size: cover;\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n#mc {\r\n  position: absolute;\r\n  bottom: 0;\r\n  height: calc(480px * 0.7);\r\n  width: calc(270px * 0.7);\r\n}\r\n\r\n.center {\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.bedroom {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/game/bedroom.jpg")) + ");\r\n}\r\n\r\n.classroom {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/game/classroom.jpg")) + ");\r\n}\r\n\r\n.playground {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/game/playground.jpg")) + ");\r\n}\r\n\r\n.game-text {\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: #fff;\r\n  padding: 5px 20px 5px 5px;\r\n  margin: 0;\r\n  -webkit-box-shadow: 0 2px 5px #666;\r\n          box-shadow: 0 2px 5px #666;\r\n}\r\n\r\n.next {\r\n  width: 55px;\r\n  height: 55px;\r\n  border-radius: 50%;\r\n  background: #db4437;\r\n  position: absolute;\r\n  bottom: -10px;\r\n  right: -10px;\r\n  z-index: 2;\r\n  cursor: pointer;\r\n  -webkit-box-shadow: 0 2px 5px #666;\r\n          box-shadow: 0 2px 5px #666;\r\n}\r\n\r\n.arrow{\r\n  color: white;\r\n  position: absolute;\r\n  top: 0;\r\n  display: block;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  text-align: center;\r\n  padding: 0;\r\n  margin: 0;\r\n  line-height: 55px;\r\n  font-size: 38px;\r\n  font-weight: 100;\r\n}\r\n", ""]);
+exports.push([module.i, "#canvas {\r\n  width: calc(960px * 0.7);\r\n  height: calc(678px * 0.7);\r\n  position: relative;\r\n  margin: 0 auto;\r\n  /* transform: translateX(-50%) translateY(-50%); */\r\n  border: 1px solid #000;\r\n  background-size: cover;\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n#mc, #mom, #teacher, #naomi {\r\n  position: absolute;\r\n  bottom: 0;\r\n  height: calc(480px * 0.7);\r\n  width: calc(270px * 0.7);\r\n  -webkit-transition: opacity 0.3s;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n#mc {\r\n  right: 0;\r\n}\r\n\r\n#mom, #teacher {\r\n  left: 0;\r\n}\r\n\r\n#naomi {\r\n  left: 20%;\r\n}\r\n\r\n#teacher {\r\n  width: calc(330px * 0.7);\r\n}\r\n\r\n.center {\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.bedroom {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/game/bedroom.jpg")) + ");\r\n}\r\n\r\n.classroom {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/game/classroom.jpg")) + ");\r\n}\r\n\r\n.playground {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/game/playground.jpg")) + ");\r\n}\r\n\r\n.game-text {\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: #fff;\r\n  padding: 5px 20px 5px 5px;\r\n  margin: 0;\r\n  -webkit-box-shadow: 0 2px 5px #666;\r\n          box-shadow: 0 2px 5px #666;\r\n}\r\n\r\n.next {\r\n  width: 55px;\r\n  height: 55px;\r\n  border-radius: 50%;\r\n  background: #db4437;\r\n  position: absolute;\r\n  bottom: -10px;\r\n  right: -10px;\r\n  z-index: 2;\r\n  cursor: pointer;\r\n  -webkit-box-shadow: 0 2px 5px #666;\r\n          box-shadow: 0 2px 5px #666;\r\n}\r\n\r\n.arrow{\r\n  color: white;\r\n  position: absolute;\r\n  top: 0;\r\n  display: block;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  text-align: center;\r\n  padding: 0;\r\n  margin: 0;\r\n  line-height: 55px;\r\n  font-size: 38px;\r\n  font-weight: 100;\r\n}\r\n", ""]);
 
 // exports
 
@@ -986,7 +1017,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/game/game-display/game-display.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"canvas\" class=\"bedroom\" #canvas>\n  <div class=\"next\" (click)=\"next()\"><p class=\"arrow\">></p></div>\n  <img src=\"../../assets/game/mc.png\" id=\"mc\" />\n  <app-question-modal (sendChoice)=\"emitChoice($event)\"></app-question-modal>\n  <p class=\"game-text\">{{text}}</p>\n</div>\n"
+module.exports = "<div id=\"canvas\" class=\"bedroom\" #canvas>\n  <div class=\"next\" (click)=\"next()\"><p class=\"arrow\">></p></div>\n  <img src=\"../../assets/game/mc.png\" id=\"mc\" [ngStyle]=\"{'opacity': talking == 'mc' ? '1' : '0.5'}\" />\n  <img src=\"../../assets/game/mother.png\" id=\"mom\" *ngIf=\"scene == 1\" [ngStyle]=\"{'opacity': talking == 'mom' ? '1' : '0.5'}\"/>\n  <img src=\"../../assets/game/bullies.png\" id=\"mom\" *ngIf=\"scene == 2\" [ngStyle]=\"{'opacity': counter == 3 ? '1' : '0.5'}\"/>\n  <img src=\"../../assets/game/jason.png\" id=\"mom\" *ngIf=\"scene == 3  || scene == 3.5\" [ngStyle]=\"{'opacity': talking == 'jason' ? '1' : '0.5'}\"/>\n  <img src=\"../../assets/game/teacher.png\" id=\"teacher\" *ngIf=\"scene == 4 && counter < 6\" [ngStyle]=\"{'opacity': talking == 'teacher' ? '1' : '0.5'}\"/>\n  <img src=\"../../assets/game/naomi.png\" id=\"naomi\" *ngIf=\"scene == 4 && counter > 2\" [ngStyle]=\"{'opacity': talking == 'naomi' ? '1' : '0.5'}\"/>\n  <app-question-modal (sendChoice)=\"emitChoice($event)\"></app-question-modal>\n  <p class=\"game-text\">{{text}}</p>\n</div>\n"
 
 /***/ }),
 
@@ -1023,6 +1054,7 @@ var GameDisplayComponent = /** @class */ (function () {
     }
     GameDisplayComponent.prototype.ngOnInit = function () {
         this.text = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["a" /* scene1 */][0].dialog;
+        this.talking = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["a" /* scene1 */][0].by;
         this.canvasElement = document.getElementById('canvas');
         this.modalElement = document.getElementsByTagName('app-question-modal')[0];
     };
@@ -1030,6 +1062,7 @@ var GameDisplayComponent = /** @class */ (function () {
         if (this.scene == 1 && this.counter < __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["a" /* scene1 */].length - 1) {
             this.counter = this.counter + 1;
             this.text = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["a" /* scene1 */][this.counter].dialog;
+            this.talking = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["a" /* scene1 */][this.counter].by;
             return;
         }
         else if (this.scene == 1) {
@@ -1042,6 +1075,7 @@ var GameDisplayComponent = /** @class */ (function () {
         if (this.scene == 2 && this.counter < __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["b" /* scene2 */].length) {
             this.text = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["b" /* scene2 */][this.counter].dialog;
             this.counter = this.counter + 1;
+            this.talking = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["b" /* scene2 */][this.counter].by;
             return;
         }
         else if (this.scene == 2 && this.counter == __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["b" /* scene2 */].length) {
@@ -1057,6 +1091,7 @@ var GameDisplayComponent = /** @class */ (function () {
         }
         if (this.scene == 3 && this.counter < __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["c" /* scene3 */].length) {
             this.text = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["c" /* scene3 */][this.counter].dialog;
+            this.talking = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["c" /* scene3 */][this.counter].by;
             this.counter = this.counter + 1;
             return;
         }
@@ -1068,16 +1103,24 @@ var GameDisplayComponent = /** @class */ (function () {
         }
         if (this.scene == 3.5 && this.counter < __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["e" /* scene3b */].length) {
             this.text = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["e" /* scene3b */][this.counter].dialog;
+            this.talking = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["e" /* scene3b */][this.counter].by;
             this.counter = this.counter + 1;
             return;
         }
         else if (this.scene == 3.5 && this.counter == __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["e" /* scene3b */].length) {
             this.resetCounter();
             this.scene = 4;
+            this.canvasElement.classList.remove('playground');
         }
         if (this.scene == 4 && this.counter < __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["f" /* scene4 */].length) {
             this.text = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["f" /* scene4 */][this.counter].dialog;
+            this.talking = __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["f" /* scene4 */][this.counter].by;
             this.counter = this.counter + 1;
+            return;
+        }
+        else if (this.scene == 4 && this.counter == __WEBPACK_IMPORTED_MODULE_1__dialogs_day_one__["f" /* scene4 */].length) {
+            this.store.dispatch({ type: 'SET_MODAL', payload: true });
+            this.store.dispatch({ type: 'SET_QUESTION_NUMBER', payload: 2 });
             return;
         }
     };
@@ -1352,7 +1395,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "a {\r\n\tcolor: #000;\r\n}\r\n\r\nh1 {\r\n\tcolor: #fff;\r\n\tfont-size: 70px;\r\n\tmargin: 100px 0 20px 120px;\r\n}\r\n\r\nh1:hover {\r\n  color: #0064B4;\r\n}\r\n\r\n.background {\r\n  background-image: url(" + escape(__webpack_require__("../../../../../src/assets/images/banner.jpg")) + ");\r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n\tposition: absolute;\r\n  top: 2.85em;\r\n\tleft: 0;\r\n\tz-index: -1;\r\n\twidth: 100%;\r\n  height: 23.25rem;\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n}\r\n\r\n.banner {\r\n  height: 23.25rem;\r\n  overflow-y: hidden;\r\n}\r\n\r\n.height-zero {\r\n  -webkit-animation: hide-img 0.5s linear forwards;\r\n          animation: hide-img 0.5s linear forwards;\r\n  -webkit-animation-delay: 0.1s;\r\n          animation-delay: 0.1s;\r\n}\r\n\r\n@-webkit-keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n    top: 7.65em !important;\r\n  }\r\n\r\n  .topnav {\r\n  \ttop: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 15px;\r\n}\r\n\r\n.topnav a {\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tpadding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.botnav {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\tfont-size: 1rem;\r\n\ttext-align: center;\r\n\tmargin-top: 80px;\r\n\tmargin-bottom: 10px;\r\n  font-weight: 700;\r\n  padding-bottom: 25px;\r\n  border-bottom: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.botnav a {\r\n  display: table-cell;\r\n  margin: 0;\r\n  padding: 15px 15px 18px 15px;\r\n}\r\n\r\n.botnav a {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.botnav a:hover, .botnav a.active{\r\n  color: #0064B4;\r\n  border-bottom: 3px solid #0064B4;\r\n  padding: 15px;\r\n}\r\n\r\n.topnav input[type='search'] {\r\n  height: 48px;\r\n  width: 0;\r\n  padding: 0;\r\n  margin-top: -17px;\r\n  font-size: inherit;\r\n  border: 0;\r\n  background: #E5E5E6;\r\n  -webkit-transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n  transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n}\r\n\r\n#hamburger {\r\n  display: none;\r\n  position: fixed;\r\n  top: 20px;\r\n  left: 20px;\r\n\r\n  width: 25px;\r\n  height: 20px;\r\n  -webkit-transform: rotate(0deg);\r\n  transform: rotate(0deg);\r\n  -webkit-transition: .25s ease-in-out;\r\n  transition: .25s ease-in-out;\r\n  cursor: pointer;\r\n\r\n  z-index: 4;\r\n}\r\n\r\n#hamburger span {\r\n  display: block;\r\n  position: absolute;\r\n  height: 3px;\r\n  width: 100%;\r\n  border-radius: 9px;\r\n  opacity: 1;\r\n  -webkit-transform: rotate(0deg);\r\n  transform: rotate(0deg);\r\n  -webkit-transition: .25s ease-in-out;\r\n  transition: .25s ease-in-out;\r\n}\r\n\r\n#hamburger span:nth-child(1) {\r\ntop: 0px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger span:nth-child(2) {\r\ntop: 7px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger span:nth-child(3) {\r\ntop: 14px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger.open span:nth-child(1) {\r\n-webkit-transform: rotate(45deg);\r\ntransform: rotate(45deg);\r\ntop: -3px;\r\n}\r\n\r\n#hamburger.open span:nth-child(2) {\r\nwidth: 0%;\r\nopacity: 0;\r\n}\r\n\r\n#hamburger.open span:nth-child(3) {\r\n-webkit-transform: rotate(-45deg);\r\ntransform: rotate(-45deg);\r\ntop: 14px;\r\n}\r\n\r\n.burger-span {\r\n  background: rgb(49, 49, 49);\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .topnav input[type='search']{\r\n    height: 50px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 940px) and (max-width: 1200px) {\r\n    h1 {\r\n      width: 50%;\r\n      margin-top: 10px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    h1 {\r\n      font-size: 40px;\r\n      height: auto;\r\n      margin-top: 160px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 736px) {\r\n  #hamburger {\r\n    display: block;\r\n  }\r\n\r\n  .botnav {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: #fff;\r\n    z-index: 2;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    margin: 0;\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n    -webkit-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n  .show {\r\n    opacity: 1;\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n  }\r\n\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .topnav a {\r\n      font-size: 0;\r\n      padding-top: 31px;\r\n      padding-bottom: 19px;\r\n    }\r\n\r\n    .topnav i {\r\n      font-size: 17px;\r\n    }\r\n\r\n    h1 {\r\n      margin-top: 45px;\r\n      width: 50%;\r\n    }\r\n\r\n    .background {\r\n      height: 18rem;\r\n    }\r\n\r\n    @-webkit-keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n\r\n    @keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    h1 {\r\n      margin-left: 80px;\r\n      margin-top: -10px;\r\n      width: 40%;\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, "a {\r\n\tcolor: #000;\r\n}\r\n\r\nh1 {\r\n\tcolor: #fff;\r\n\tfont-size: 70px;\r\n\tmargin: 100px 0 20px 120px;\r\n}\r\n\r\nh1:hover {\r\n  color: #0064B4;\r\n}\r\n\r\n.background {\r\n  background: url(" + escape(__webpack_require__("../../../../../src/assets/images/banner.jpg")) + ") center no-repeat;\r\n  background-size: cover;\r\n\tposition: absolute;\r\n  top: 2.85em;\r\n\tleft: 0;\r\n\tz-index: -1;\r\n\twidth: 100%;\r\n  height: 23.25rem;\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n}\r\n\r\n.banner {\r\n  height: 23.25rem;\r\n  overflow-y: hidden;\r\n}\r\n\r\n.banner a {\r\n  text-decoration: none;\r\n}\r\n\r\n.height-zero {\r\n  -webkit-animation: hide-img 0.5s linear forwards;\r\n          animation: hide-img 0.5s linear forwards;\r\n  -webkit-animation-delay: 0.1s;\r\n          animation-delay: 0.1s;\r\n}\r\n\r\n.hidden {\r\n  display: none !important;\r\n}\r\n\r\n.whitespace {\r\n  height: 50px;\r\n  margin-top: 80px;\r\n  background: white;\r\n}\r\n\r\n@-webkit-keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@keyframes hide-img {\r\n  from {\r\n    height: 23.25rem;\r\n  }\r\n  to {\r\n    height: 0;\r\n  }\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n    top: 7.65em !important;\r\n  }\r\n\r\n  .topnav {\r\n  \ttop: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 15px;\r\n}\r\n\r\n.topnav a {\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tpadding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.botnav {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\tfont-size: 1rem;\r\n\ttext-align: center;\r\n\tmargin-top: 80px;\r\n\tmargin-bottom: 10px;\r\n  font-weight: 700;\r\n  padding-bottom: 25px;\r\n}\r\n\r\n.botnav a {\r\n  display: table-cell;\r\n  margin: 0;\r\n  padding: 15px 15px 18px 15px;\r\n}\r\n\r\n.botnav a {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.botnav a:hover, .botnav a.active{\r\n  color: #0064B4;\r\n  border-bottom: 3px solid #0064B4;\r\n  padding: 15px;\r\n}\r\n\r\n.topnav input[type='search'] {\r\n  height: 48px;\r\n  width: 0;\r\n  padding: 0;\r\n  margin-top: -17px;\r\n  font-size: inherit;\r\n  border: 0;\r\n  background: #E5E5E6;\r\n  -webkit-transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n  transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;\r\n}\r\n\r\n#hamburger {\r\n  display: none;\r\n  position: fixed;\r\n  top: 20px;\r\n  left: 20px;\r\n\r\n  width: 25px;\r\n  height: 20px;\r\n  -webkit-transform: rotate(0deg);\r\n  transform: rotate(0deg);\r\n  -webkit-transition: .25s ease-in-out;\r\n  transition: .25s ease-in-out;\r\n  cursor: pointer;\r\n\r\n  z-index: 4;\r\n}\r\n\r\n#hamburger span {\r\n  display: block;\r\n  position: absolute;\r\n  height: 3px;\r\n  width: 100%;\r\n  border-radius: 9px;\r\n  opacity: 1;\r\n  -webkit-transform: rotate(0deg);\r\n  transform: rotate(0deg);\r\n  -webkit-transition: .25s ease-in-out;\r\n  transition: .25s ease-in-out;\r\n}\r\n\r\n#hamburger span:nth-child(1) {\r\ntop: 0;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger span:nth-child(2) {\r\ntop: 7px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger span:nth-child(3) {\r\ntop: 14px;\r\n-webkit-transform-origin: left center;\r\ntransform-origin: left center;\r\n}\r\n\r\n#hamburger.open span:nth-child(1) {\r\n-webkit-transform: rotate(45deg);\r\ntransform: rotate(45deg);\r\ntop: -3px;\r\n}\r\n\r\n#hamburger.open span:nth-child(2) {\r\nwidth: 0;\r\nopacity: 0;\r\n}\r\n\r\n#hamburger.open span:nth-child(3) {\r\n-webkit-transform: rotate(-45deg);\r\ntransform: rotate(-45deg);\r\ntop: 14px;\r\n}\r\n\r\n.burger-span {\r\n  background: rgb(49, 49, 49);\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .topnav input[type='search']{\r\n    height: 50px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 940px) and (max-width: 1200px) {\r\n    h1 {\r\n      width: 50%;\r\n      margin-top: 10px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    h1 {\r\n      font-size: 40px;\r\n      height: auto;\r\n      margin-top: 160px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 736px) {\r\n  #hamburger {\r\n    display: block;\r\n  }\r\n\r\n  .botnav {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: #fff;\r\n    z-index: 2;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    margin: 0;\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n    -webkit-transition: all 0.3s;\r\n    transition: all 0.3s;\r\n  }\r\n\r\n  .show {\r\n    opacity: 1;\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n  }\r\n\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .topnav a {\r\n      font-size: 0;\r\n      padding-top: 31px;\r\n      padding-bottom: 19px;\r\n    }\r\n\r\n    .topnav i {\r\n      font-size: 17px;\r\n    }\r\n\r\n    h1 {\r\n      margin-top: 45px;\r\n      width: 50%;\r\n    }\r\n\r\n    .background {\r\n      height: 18rem;\r\n    }\r\n\r\n    @-webkit-keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n\r\n    @keyframes hide-img {\r\n      from {\r\n        height: 18rem;\r\n      }\r\n      to {\r\n        height: 0;\r\n      }\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    h1 {\r\n      margin-left: 80px;\r\n      margin-top: -10px;\r\n      width: 40%;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -1365,7 +1408,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"hamburger\"[ngClass]=\"visible ? 'open' : ''\" (click)=\"toggleNav()\">\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n</div>\r\n\r\n<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn() else isAuth\">\r\n    <input type=\"search\" title=\"search\" placeholder=\"Zoeken... \" #searchBar/><!--\r\n --><a (click)=\"toggleSearchBar()\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></a><!--\r\n --><a [routerLink]=\"['/register']\"><i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i> Registreren</a><!--\r\n --><a [routerLink]=\"['/login']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Aanmelden</a>\r\n\t</div>\r\n\t<ng-template #isAuth>\r\n    <a [routerLink]=\"['/user']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> {{name}}</a><!--\r\n --><a (click)=\"logout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\r\n\t</ng-template>\r\n</div>\r\n\r\n\r\n<div class=\"banner\" [ngClass]=\"disableImg ? 'height-zero' : ''\">\r\n\t<img class=\"logo\" src=\"assets/images/Logo_Antwerpen.jpg\">\r\n\t<div class=\"background\" [ngClass]=\"disableImg ? 'height-zero' : ''\" ></div>\r\n\t<h1>Stop seksuele intimidatie</h1>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"botnav\" [ngClass]=\"visible ? 'show' : ''\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat is seksuele intimidatie?</a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat kan je zelf doen?</a>\r\n  <a [routerLink]=\"['/feiten']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Feiten</a>\r\n  <a [routerLink]=\"['/contact']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Contact</a>\r\n  <a [routerLink]=\"['/game']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Game</a>\r\n</div>\r\n\r\n<script>\r\n\r\n\r\n</script>\r\n"
+module.exports = "<div id=\"hamburger\"[ngClass]=\"visible ? 'open' : ''\" (click)=\"toggleNav()\">\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n</div>\r\n\r\n<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn() else isAuth\">\r\n    <input type=\"search\" title=\"search\" placeholder=\"Zoeken... \" #searchBar/><!--\r\n --><a (click)=\"toggleSearchBar()\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></a><!--\r\n --><a [routerLink]=\"['/register']\"><i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i> Registreren</a><!--\r\n --><a [routerLink]=\"['/login']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Aanmelden</a>\r\n\t</div>\r\n\t<ng-template #isAuth>\r\n    <a [routerLink]=\"['/user']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> {{name}}</a><!--\r\n --><a (click)=\"logout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\r\n\t</ng-template>\r\n</div>\r\n\r\n\r\n<div class=\"banner\" [ngClass]=\"disableImg ? 'height-zero' : ''\">\r\n\t<img class=\"logo\" src=\"assets/images/Logo_Antwerpen.jpg\">\r\n\t<div class=\"background\" [ngClass]=\"disableImg ? 'height-zero' : ''\" ></div>\r\n  <a [routerLink]=\"['/portal']\"><h1>Stop seksuele intimidatie</h1></a>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"botnav\" [ngClass]=\"disableNav ? 'hidden' : 'show'\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat is seksuele intimidatie?</a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat kan je zelf doen?</a>\r\n  <a [routerLink]=\"['/feiten']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Feiten</a>\r\n  <a [routerLink]=\"['/contact']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Contact</a>\r\n  <a [routerLink]=\"['/game']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Game</a>\r\n</div>\r\n\r\n<div class=\"whiteSpace\" [ngClass]=\"disableNav ? 'whitespace' : ''\">\r\n"
 
 /***/ }),
 
@@ -1397,6 +1440,7 @@ var HeaderComponent = /** @class */ (function () {
         this.name = 'User';
         this.visible = false;
         this.disableImg = false;
+        this.disableNav = false;
         store.select('responsiveNagivation').subscribe(function (v) { return _this.visible = v; });
         this.authService.authObj.subscribe(function (v) {
             if (v && v.firstname) {
@@ -1430,6 +1474,10 @@ var HeaderComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Boolean)
     ], HeaderComponent.prototype, "disableImg", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Boolean)
+    ], HeaderComponent.prototype, "disableNav", void 0);
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-header',
@@ -1829,6 +1877,67 @@ var LoginComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]])
     ], LoginComponent);
     return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/portal/portal.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "#portal {\r\n  display: -ms-grid;\r\n  display: grid;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\ndiv.contentBox {\r\n  min-height: 20vh;\r\n  display: -ms-grid;\r\n  display: grid;\r\n  -ms-grid-columns: .5fr 3fr 1fr .5fr;\r\n      grid-template-columns: .5fr 3fr 1fr .5fr;\r\n      grid-template-areas: \" . text arrows .\";\r\n  grid-column-gap: 1vw;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  color: white;\r\n  font-size: 5vh;\r\n  font-weight: bold;\r\n}\r\ndiv.contentBox p {\r\n  -ms-grid-row: 1;\r\n  -ms-grid-column: 2;\r\n  grid-area: text;\r\n  text-align: right;\r\n  -webkit-transition: font-size .1s ease-in-out;\r\n  transition: font-size .1s ease-in-out;\r\n  font-size: 5vh;\r\n}\r\ndiv.contentBox:after {\r\n  content: \">>\";\r\n  -ms-grid-row: 1;\r\n  -ms-grid-column: 3;\r\n  grid-area: arrows;\r\n  -ms-grid-column-align: left;\r\n      justify-self: left;\r\n  -webkit-transition: margin-left .1s ease-in-out;\r\n  transition: margin-left .1s ease-in-out;\r\n}\r\ndiv.contentBox:hover:after {\r\n  margin-left: 2vw;\r\n}\r\ndiv.contentBox:hover p {\r\n  font-size:  5.5vh;\r\n}\r\na:nth-child(3n+1) div.contentBox {\r\n  background: #CF0039;\r\n}\r\na:nth-child(3n+2) div.contentBox {\r\n  background: #F18A00;\r\n}\r\na:nth-child(3n) div.contentBox {\r\n  background: #0064B4;\r\n}\r\n#portal a {\r\n  margin: 0;\r\n  text-decoration: none;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/portal/portal.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-header [disableNav]=\"true\"></app-header>\r\n<div id=\"portal\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\">\r\n    <div class=\"contentBox\">\r\n    <p>Wat is seksuele intimidatie</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\">\r\n    <div class=\"contentBox\">\r\n    <p>Wat kan je zelf doen</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/feiten']\">\r\n    <div class=\"contentBox\">\r\n    <p>Feiten over seksuele intimidatie</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/contact']\">\r\n    <div class=\"contentBox\">\r\n    <p>Contact</p>\r\n  </div>\r\n  </a>\r\n  <a [routerLink]=\"['/game']\">\r\n    <div class=\"contentBox\">\r\n    <p>Speel de game</p>\r\n  </div>\r\n  </a>\r\n</div>\r\n<app-footer></app-footer>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/portal/portal.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortalComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PortalComponent = /** @class */ (function () {
+    function PortalComponent() {
+    }
+    PortalComponent.prototype.ngOnInit = function () {
+    };
+    PortalComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-portal',
+            template: __webpack_require__("../../../../../src/app/portal/portal.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/portal/portal.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PortalComponent);
+    return PortalComponent;
 }());
 
 
@@ -2464,7 +2573,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".container {\r\n  margin-top: 20px;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.btnContainer {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-wrap: wrap;\r\n      flex-wrap: wrap;\r\n}\r\n\r\n.chartContainer {\r\n  width: 40%;\r\n  height: 400px;\r\n}\r\n\r\n.btn {\r\n  position: relative;\r\n\r\n  display: block;\r\n  margin: 30px 5px;\r\n  padding: 12px 24px;\r\n\r\n  overflow: hidden;\r\n\r\n  border-width: 0;\r\n  outline: none;\r\n  border-radius: 2px;\r\n  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .6);\r\n          box-shadow: 0 1px 4px rgba(0, 0, 0, .6);\r\n\r\n  background-color: #2ecc71;\r\n  color: #ecf0f1;\r\n\r\n  -webkit-transition: background-color .3s;\r\n\r\n  transition: background-color .3s;\r\n}\r\n\r\n.btn:hover, .btn:focus, .active {\r\n  background-color: #27ae60;\r\n}", ""]);
+exports.push([module.i, ".container {\r\n  margin-top: 20px;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.btnContainer {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-wrap: wrap;\r\n      flex-wrap: wrap;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.chartContainer {\r\n  width: 40%;\r\n  height: 400px;\r\n}\r\n\r\n.btn {\r\n  position: relative;\r\n\r\n  display: block;\r\n  margin: 30px 5px;\r\n  padding: 12px 24px;\r\n\r\n  overflow: hidden;\r\n\r\n  border-width: 0;\r\n  outline: none;\r\n  border-radius: 2px;\r\n  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .6);\r\n          box-shadow: 0 1px 4px rgba(0, 0, 0, .6);\r\n\r\n  background-color: #2ecc71;\r\n  color: #ecf0f1;\r\n\r\n  -webkit-transition: background-color .3s;\r\n\r\n  transition: background-color .3s;\r\n}\r\n\r\n.btn:hover, .btn:focus, .active {\r\n  background-color: #27ae60;\r\n}\r\n\r\n.fa {\r\n  padding: 20px 20px;\r\n  font-size: 20px;\r\n  width: 20px;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.fa:hover {\r\n  color: #0064B4;\r\n}\r\n", ""]);
 
 // exports
 
@@ -2477,7 +2586,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/user/stats/stats.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <div class=\"btnContainer\">\r\n    <div class=\"btn\" [ngClass]=\"questionNumber == 1 ? 'active' : ''\" (click)=\"setQuestion(1)\">Question 1</div>\r\n    <div class=\"btn\" [ngClass]=\"questionNumber == 2 ? 'active' : ''\" (click)=\"setQuestion(2)\">Question 2</div>\r\n  </div>\r\n\r\n  <div class=\"chartContainer\">\r\n\t<ngx-charts-pie-chart\r\n\t[results]=\"results\"\r\n\t[legend]=\"true\">\r\n\t</ngx-charts-pie-chart>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"btnContainer\">\r\n    <i class=\"fa fa-arrow-left\" (click)=\"goBack()\"></i>\r\n    <div class=\"btn\" [ngClass]=\"questionNumber == 1 ? 'active' : ''\" (click)=\"setQuestion(1)\">Question 1</div>\r\n    <div class=\"btn\" [ngClass]=\"questionNumber == 2 ? 'active' : ''\" (click)=\"setQuestion(2)\">Question 2</div>\r\n  </div>\r\n\r\n  <div class=\"chartContainer\">\r\n\t<ngx-charts-pie-chart\r\n\t[results]=\"results\"\r\n\t[legend]=\"true\">\r\n\t</ngx-charts-pie-chart>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2500,6 +2609,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var StatsComponent = /** @class */ (function () {
     function StatsComponent() {
         this.getQuestion = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.back = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.questionNumber = 1;
     }
     StatsComponent.prototype.ngAfterViewInit = function () {
@@ -2507,6 +2617,9 @@ var StatsComponent = /** @class */ (function () {
     StatsComponent.prototype.setQuestion = function (question) {
         this.getQuestion.emit(question);
         this.questionNumber = question;
+    };
+    StatsComponent.prototype.goBack = function () {
+        this.back.emit();
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
@@ -2516,6 +2629,10 @@ var StatsComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
         __metadata("design:type", Object)
     ], StatsComponent.prototype, "getQuestion", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], StatsComponent.prototype, "back", void 0);
     StatsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-stats',
@@ -2677,7 +2794,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "table {\r\n  border-collapse: collapse;\r\n  width: 600px;\r\n}\r\n\r\ntable > div {\r\n  text-align: center;\r\n  display:table-row;\r\n}\r\n\r\nth {\r\n  background-color: #CF0039;\r\n  color: #fff;\r\n  padding: 10px;\r\n  width: 33%;\r\n}\r\n\r\n.codes th {\r\n  text-align: left;\r\n}\r\n\r\n.codes th:last-of-type, .codes tr td:last-of-type {\r\n  text-align: right;\r\n}\r\n\r\n.codes td{\r\n  padding: 10px;\r\n  border-bottom: 1px solid #BABABA;\r\n}\r\n\r\n.no-codes tbody {\r\n  text-align: center;\r\n}\r\n\r\n.no-codes td {\r\n  padding-bottom: 30px;\r\n}\r\n\r\n.no-codes tr:first-child td {\r\n  padding-top: 20px;\r\n  padding-bottom: 0;\r\n}\r\n\r\n.add-code {\r\n  color: white;\r\n  font-weight: bold;\r\n  background: #0064B4;\r\n  cursor: pointer;\r\n  padding: 15px;\r\n  display: block !important;\r\n  margin: 10px -5px 10px 0;\r\n  float: right;\r\n  -webkit-transition: background .25s ease-in-out;\r\n  transition: background .25s ease-in-out;\r\n}\r\n\r\n.add-code:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.fa-times {\r\n  color: #CF0039;\r\n  cursor: pointer;\r\n}\r\n\r\n.fa-cog {\r\n  color: #666;\r\n}\r\n\r\n.delete-row {\r\n  text-align: center;\r\n  width: 20px;\r\n}\r\n\r\nmain {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: baseline;\r\n      -ms-flex-align: baseline;\r\n          align-items: baseline;\r\n  padding-top : 60px;\r\n}\r\n\r\n.sidebar {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: vertical;\r\n\t-webkit-box-direction: normal;\r\n\t    -ms-flex-flow: column;\r\n\t        flex-flow: column;\r\n\tmargin-right: 20px;\r\n}\r\n\r\n.sidebar a {\r\n  width: 300px;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n  margin: -1px 0 0 0;\r\n  padding: 15px 10px;\r\n  position: relative;\r\n}\r\n\r\n.sidebar a:last-child {\r\n  border-bottom: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.sidebar a:hover {\r\n  background: #eee;\r\n  color: #0064B4;\r\n  margin-bottom: -3px;\r\n}\r\n\r\n.sidebar a.selected {\r\n  font-weight: bold;\r\n  color: #0064B4;\r\n  margin-bottom: -3px;\r\n}\r\n\r\n.sidebar a i {\r\n  position: absolute;\r\n  right: 10px;\r\n  font-size: .8rem;\r\n  margin: .1rem 0;\r\n  -webkit-transition: font-size .2s ease-in-out, margin .2s ease-in-out;\r\n  transition: font-size .2s ease-in-out, margin .2s ease-in-out;\r\n}\r\n\r\n.sidebar a:hover i {\r\n  font-size: 1rem;\r\n  margin: 0 3px;\r\n}\r\n\r\n.feed-container {\r\n  width: 40%;\r\n}\r\n\r\n.sidebar a:hover, .sidebar a.active{\r\n  color: #0064B4;\r\n  border-bottom: 3px solid #0064B4;\r\n  padding: 15px;\r\n}\r\n\r\n.feed-container table {\r\n  width: 100%;\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    main {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n      -webkit-box-align: center;\r\n          -ms-flex-align: center;\r\n              align-items: center;\r\n    }\r\n\r\n    .feed-container {\r\n      width: 60%;\r\n    }\r\n\r\n    .feed-container table {\r\n      margin-top: 30px;\r\n    }\r\n\r\n    .sidebar {\r\n      width: 100%;\r\n      margin-right: 0;\r\n      -webkit-box-align: center;\r\n          -ms-flex-align: center;\r\n              align-items: center;\r\n    }\r\n\r\n    .sidebar a {\r\n      width: 50%;\r\n    }\r\n}", ""]);
+exports.push([module.i, "table {\r\n  border-collapse: collapse;\r\n  width: 600px;\r\n}\r\n\r\ntable > div {\r\n  text-align: center;\r\n  display:table-row;\r\n}\r\n\r\nth {\r\n  background-color: #CF0039;\r\n  color: #fff;\r\n  padding: 10px;\r\n  width: 33%;\r\n}\r\n\r\n.codes th {\r\n  text-align: left;\r\n}\r\n\r\n.codes th:last-of-type, .codes tr td:last-of-type {\r\n  text-align: right;\r\n}\r\n\r\n.codes td{\r\n  padding: 10px;\r\n  border-bottom: 1px solid #BABABA;\r\n}\r\n\r\n.no-codes tbody {\r\n  text-align: center;\r\n}\r\n\r\n.no-codes td {\r\n  padding-bottom: 30px;\r\n}\r\n\r\n.no-codes tr:first-child td {\r\n  padding-top: 20px;\r\n  padding-bottom: 0;\r\n}\r\n\r\n.add-code {\r\n  color: white;\r\n  font-weight: bold;\r\n  background: #0064B4;\r\n  padding: 15px;\r\n  display: block !important;\r\n  margin: 10px -5px 10px 0;\r\n  float: right;\r\n  -webkit-transition: background .25s ease-in-out;\r\n  transition: background .25s ease-in-out;\r\n}\r\n\r\n.add-code:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.fa-times {\r\n  color: #CF0039;\r\n}\r\n\r\n.fa-cog {\r\n  color: #666;\r\n}\r\n\r\n.delete-row {\r\n  text-align: center;\r\n  width: 20px;\r\n}\r\n\r\nmain {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  -webkit-box-align: baseline;\r\n      -ms-flex-align: baseline;\r\n          align-items: baseline;\r\n  padding-top : 60px;\r\n}\r\n\r\n.sidebar {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-orient: vertical;\r\n\t-webkit-box-direction: normal;\r\n\t    -ms-flex-flow: column;\r\n\t        flex-flow: column;\r\n\tmargin-right: 20px;\r\n}\r\n\r\n.sidebar a {\r\n  width: 300px;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n  margin: -1px 0 0 0;\r\n  padding: 15px 10px;\r\n  position: relative;\r\n}\r\n\r\n.sidebar a:last-child {\r\n  border-bottom: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.sidebar a:hover {\r\n  background: #eee;\r\n  color: #0064B4;\r\n  margin-bottom: -3px;\r\n}\r\n\r\n.sidebar a.selected {\r\n  font-weight: bold;\r\n  color: #0064B4;\r\n  margin-bottom: -3px;\r\n}\r\n\r\n.sidebar a i {\r\n  position: absolute;\r\n  right: 10px;\r\n  font-size: .8rem;\r\n  margin: .1rem 0;\r\n  -webkit-transition: font-size .2s ease-in-out, margin .2s ease-in-out;\r\n  transition: font-size .2s ease-in-out, margin .2s ease-in-out;\r\n}\r\n\r\n.sidebar a:hover i {\r\n  font-size: 1rem;\r\n  margin: 0 3px;\r\n}\r\n\r\n.feed-container {\r\n  width: 40%;\r\n}\r\n\r\n.sidebar a:hover, .sidebar a.active{\r\n  color: #0064B4;\r\n  border-bottom: 3px solid #0064B4;\r\n  padding: 15px;\r\n}\r\n\r\n.feed-container table {\r\n  width: 100%;\r\n}\r\n\r\n.fa {\r\n  cursor: pointer;\r\n}\r\n\r\n.fa-eye:hover {\r\n  color: #0064B4;\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    main {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n      -webkit-box-align: center;\r\n          -ms-flex-align: center;\r\n              align-items: center;\r\n    }\r\n\r\n    .feed-container {\r\n      width: 60%;\r\n    }\r\n\r\n    .feed-container table {\r\n      margin-top: 30px;\r\n    }\r\n\r\n    .sidebar {\r\n      width: 100%;\r\n      margin-right: 0;\r\n      -webkit-box-align: center;\r\n          -ms-flex-align: center;\r\n              align-items: center;\r\n    }\r\n\r\n    .sidebar a {\r\n      width: 50%;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -2690,7 +2807,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/user/user.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-user-header user=\"user\"></app-user-header>\r\n<app-add-code-modal (close)=\"closeAddingModal()\" *ngIf=\"isAddingCode\"></app-add-code-modal>\r\n<app-edit-code-modal (close)=\"closeEditingModal()\" *ngIf=\"isEditingCode\"></app-edit-code-modal>\r\n\r\n<main *ngIf=\"!stats else showStats\">\r\n  <div class=\"sidebar\" [ngStyle]=\"{'z-index': isAddingCode ? '-1' : '0'}\">\r\n    <a [ngClass]=\"page == 'details' ? 'active' : ''\" (click)=\"setPage('details')\">Gegevens <i class=\"fa fa-chevron-right\"></i></a>\r\n    <a [ngClass]=\"page == 'codes' ? 'active' : ''\" (click)=\"setPage('codes')\">Codes <i class=\"fa fa-chevron-right\"></i></a>\r\n  </div>\r\n\r\n  <div class=\"feed-container\">\r\n    <app-user-details *ngIf=\"page == 'details'\"></app-user-details>\r\n\r\n    <table class=\"codes\" *ngIf=\"page == 'codes' && codes.length > 0\">\r\n      <thead>\r\n      <tr>\r\n        <th>Naam</th>\r\n        <th>Code</th>\r\n        <th class=\"delete-row\">Acties</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody class=\"codes\">\r\n        <tr *ngFor=\"let code of codes\">\r\n          <td (click)=\"getQuestions(code.keyCode)\">{{code.name}}</td>\r\n          <td>{{code.keyCode}}</td>\r\n          <td class=\"delete-row\">\r\n            <span class=\"fa fa-cog\" (click)=\"openEditingModal(code)\"></span>\r\n            <span class=\"fa fa-times\" (click)=\"deleteCode(code._id)\"></span>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n\r\n    <table class=\"no-codes\" *ngIf=\"page == 'codes' && codes.length < 1\">\r\n      <thead>\r\n      <tr>\r\n        <th>Codes</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>Geen codes gevonden</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n    <div class=\"add-code button\" *ngIf=\"page == 'codes'\" (click)=\"openAddingModal()\">Code toevoegen</div>\r\n  </div>\r\n</main>\r\n\r\n<ng-template #showStats>\r\n  <app-stats [results]=\"results\" (getQuestion)=\"getQuestion($event)\"></app-stats>\r\n</ng-template>\r\n\r\n<!-- editCode({id:code.id, codeName:code.name, keyCode:code.keyCode}) -->\r\n"
+module.exports = "<app-user-header user=\"user\"></app-user-header>\r\n<app-add-code-modal (close)=\"closeAddingModal()\" *ngIf=\"isAddingCode\"></app-add-code-modal>\r\n<app-edit-code-modal (close)=\"closeEditingModal()\" *ngIf=\"isEditingCode\"></app-edit-code-modal>\r\n\r\n<main *ngIf=\"!stats else showStats\">\r\n  <div class=\"sidebar\" [ngStyle]=\"{'z-index': isAddingCode ? '-1' : '0'}\">\r\n    <a [ngClass]=\"page == 'details' ? 'active' : ''\" (click)=\"setPage('details')\">Gegevens <i class=\"fa fa-chevron-right\"></i></a>\r\n    <a [ngClass]=\"page == 'codes' ? 'active' : ''\" (click)=\"setPage('codes')\">Codes <i class=\"fa fa-chevron-right\"></i></a>\r\n  </div>\r\n\r\n  <div class=\"feed-container\">\r\n    <app-user-details *ngIf=\"page == 'details'\"></app-user-details>\r\n\r\n    <table class=\"codes\" *ngIf=\"page == 'codes' && codes.length > 0\">\r\n      <thead>\r\n      <tr>\r\n        <th>Naam</th>\r\n        <th>Code</th>\r\n        <th class=\"delete-row\">Acties</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody class=\"codes\">\r\n        <tr *ngFor=\"let code of codes\">\r\n          <td (click)=\"getQuestions(code.keyCode)\">{{code.name}}</td>\r\n          <td>{{code.keyCode}}</td>\r\n          <td class=\"delete-row\">\r\n            <span class=\"fa fa-eye\" (click)=\"getQuestions(code.keyCode)\"></span>\r\n            <span class=\"fa fa-cog\" (click)=\"openEditingModal(code)\"></span>\r\n            <span class=\"fa fa-times\" (click)=\"deleteCode(code._id)\"></span>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n\r\n    <table class=\"no-codes\" *ngIf=\"page == 'codes' && codes.length < 1\">\r\n      <thead>\r\n      <tr>\r\n        <th>Codes</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>Geen codes gevonden</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n    <div class=\"add-code button\" *ngIf=\"page == 'codes'\" (click)=\"openAddingModal()\">Code toevoegen</div>\r\n  </div>\r\n</main>\r\n\r\n<ng-template #showStats>\r\n  <app-stats [results]=\"results\" (getQuestion)=\"getQuestion($event)\" (back)=\"closeStats()\"></app-stats>\r\n</ng-template>\r\n\r\n<!-- editCode({id:code.id, codeName:code.name, keyCode:code.keyCode}) -->\r\n"
 
 /***/ }),
 
@@ -2772,6 +2889,9 @@ var UserComponent = /** @class */ (function () {
         this.questionService.getQuestions(this.keyCode, number).subscribe(function (v) {
             _this.results = v;
         });
+    };
+    UserComponent.prototype.closeStats = function () {
+        this.stats = false;
     };
     UserComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
