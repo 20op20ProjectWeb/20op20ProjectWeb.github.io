@@ -164,7 +164,14 @@ var AppComponent = /** @class */ (function () {
                 headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpHeaders */]().set('x-auth-token', "" + token)
             })
                 .subscribe(function (v) {
-                _this.store.dispatch({ type: 'CREATE_AUTH', payload: { id: v.user.id, username: v.user.email, firstname: v.user.firstname, lastname: v.user.lastname, school: v.user.school } });
+                _this.store.dispatch({ type: 'CREATE_AUTH',
+                    payload: { id: v.user.id,
+                        username: v.user.email,
+                        firstname: v.user.firstname,
+                        lastname: v.user.lastname,
+                        school: v.user.school
+                    }
+                });
                 return true;
             }, function (err) {
                 console.log('something went wrong');
@@ -224,12 +231,11 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__game_question_modal_question_modal_component__ = __webpack_require__("../../../../../src/app/game/question-modal/question-modal.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__game_code_modal_code_modal_component__ = __webpack_require__("../../../../../src/app/game/code-modal/code-modal.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__game_game_display_game_display_component__ = __webpack_require__("../../../../../src/app/game/game-display/game-display.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__error_message_error_message_component__ = __webpack_require__("../../../../../src/app/error-message/error-message.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__services_question_service__ = __webpack_require__("../../../../../src/app/services/question.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__common_reducers_index__ = __webpack_require__("../../../../../src/app/common/reducers/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__portal_portal_component__ = __webpack_require__("../../../../../src/app/portal/portal.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_question_service__ = __webpack_require__("../../../../../src/app/services/question.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__ = __webpack_require__("../../../../../src/app/guards/auth.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__common_reducers_index__ = __webpack_require__("../../../../../src/app/common/reducers/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__portal_portal_component__ = __webpack_require__("../../../../../src/app/portal/portal.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -246,7 +252,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 // components
-
 
 
 
@@ -306,8 +311,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_29__game_question_modal_question_modal_component__["a" /* QuestionModalComponent */],
                 __WEBPACK_IMPORTED_MODULE_30__game_code_modal_code_modal_component__["a" /* CodeModalComponent */],
                 __WEBPACK_IMPORTED_MODULE_31__game_game_display_game_display_component__["a" /* GameDisplayComponent */],
-                __WEBPACK_IMPORTED_MODULE_32__error_message_error_message_component__["a" /* ErrorMessageComponent */],
-                __WEBPACK_IMPORTED_MODULE_37__portal_portal_component__["a" /* PortalComponent */],
+                __WEBPACK_IMPORTED_MODULE_36__portal_portal_component__["a" /* PortalComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
@@ -316,7 +320,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_6__ngrx_store__["b" /* StoreModule */].forRoot(__WEBPACK_IMPORTED_MODULE_36__common_reducers_index__["a" /* reducers */], {
+                __WEBPACK_IMPORTED_MODULE_6__ngrx_store__["b" /* StoreModule */].forRoot(__WEBPACK_IMPORTED_MODULE_35__common_reducers_index__["a" /* reducers */], {
                     initialState: {
                         auth: null,
                         codes: null,
@@ -329,7 +333,7 @@ var AppModule = /** @class */ (function () {
                 }),
                 __WEBPACK_IMPORTED_MODULE_8__user_user_module__["UserModule"]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_33__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_34__services_question_service__["a" /* QuestionService */], __WEBPACK_IMPORTED_MODULE_35__guards_auth_guard__["a" /* AuthGuard */], { provide: __WEBPACK_IMPORTED_MODULE_5__angular_common__["LocationStrategy"], useClass: __WEBPACK_IMPORTED_MODULE_5__angular_common__["HashLocationStrategy"] }],
+            providers: [__WEBPACK_IMPORTED_MODULE_32__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_33__services_question_service__["a" /* QuestionService */], __WEBPACK_IMPORTED_MODULE_34__guards_auth_guard__["a" /* AuthGuard */], { provide: __WEBPACK_IMPORTED_MODULE_5__angular_common__["LocationStrategy"], useClass: __WEBPACK_IMPORTED_MODULE_5__angular_common__["HashLocationStrategy"] }],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -639,7 +643,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".note {\r\n\tbackground:#eee;\r\n\tborder:0.05em solid darken(#eee, 15%);\r\n\tborder-left-width:0.2em;\r\n\tborder-radius:0.2em;\r\n\tcolor: #333;\r\n\tfont-family:sans-serif;\r\n\tfont-size:1em;\r\n\tmargin:1em;\r\n  padding: 1.2em;\r\n  width: calc(100vw - 40px - 2em - 1.2em - 15px);\r\n\r\n  position: fixed;\r\n  top: 40px;\r\n  left: 20px;\r\n  z-index: 2;\r\n}\r\n\r\n.note:before,\r\n.note:after {\r\n  display:block;\r\n  position:absolute;\r\n  left:0;\r\n  top:50%;\r\n  -webkit-transform:translate(-50%, -50%);\r\n          transform:translate(-50%, -50%);\r\n  margin-left:-0.2em / 2\r\n}\r\n\r\n.note:before {\r\n  border-radius:50%;\r\n  content:\"\";\r\n  width:calc(1.2em * 1.7);\r\n  height:calc(1.2em * 1.7);\r\n}\r\n\r\n.note:after {\r\n  color:#fff;\r\n  font: normal normal normal 0.9em/1 \"FontAwesome\";\r\n  z-index:50;\r\n}\r\n\r\n.note-emergency {\r\n\tbackground:#fe8a8a;\r\n\tborder-color:#ff3232;\r\n\tborder-left-color:#ff0000;\r\n\tcolor:#cc0000;\r\n}\r\n\r\n.note-emergency:before {\r\n  background:#ff0000;\r\n}\r\n\r\n.note-emergency:after {\r\n  content:\"\\F071\";\r\n}\r\n", ""]);
+exports.push([module.i, ".note {\r\n\tbackground:#eee;\r\n\tborder:0.05em solid darken(#eee, 15%);\r\n\tborder-left-width:0.2em;\r\n\tborder-radius:0.2em;\r\n\tcolor: #333;\r\n\tfont-family:sans-serif;\r\n\tfont-size:1em;\r\n\tmargin:1em;\r\n  padding: 1.2em;\r\n  width: calc(100vw - 40px - 2em - 1.2em - 15px);\r\n\r\n  position: fixed;\r\n  top: 40px;\r\n  left: 20px;\r\n  z-index: 2;\r\n}\r\n\r\n.note:before,\r\n.note:after {\r\n  display:block;\r\n  position:absolute;\r\n  left:0;\r\n  top:50%;\r\n  -webkit-transform:translate(-50%, -50%);\r\n          transform:translate(-50%, -50%);\r\n  margin-left: calc(-0.2em/2);\r\n}\r\n\r\n.note:before {\r\n  border-radius:50%;\r\n  content:\"\";\r\n  width:calc(1.2em * 1.7);\r\n  height:calc(1.2em * 1.7);\r\n}\r\n\r\n.note:after {\r\n  color:#fff;\r\n  font: normal normal normal 0.9em/1 \"FontAwesome\";\r\n  z-index:50;\r\n}\r\n\r\n.note-emergency {\r\n\tbackground:#fe8a8a;\r\n\tborder-color:#ff3232;\r\n\tborder-left-color:#ff0000;\r\n\tcolor:#cc0000;\r\n}\r\n\r\n.note-emergency:before {\r\n  background:#ff0000;\r\n}\r\n\r\n.note-emergency:after {\r\n  content:\"\\F071\";\r\n}\r\n", ""]);
 
 // exports
 
@@ -713,7 +717,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "span {\r\n  margin-left: 10px;\r\n  font-size: 20px;\r\n}\r\n\r\n.fa {\r\n  padding: 20px 20px;\r\n  font-size: 20px;\r\n  width: 20px;\r\n  text-decoration: none;\r\n  margin: 10px 20px 0px 0px;\r\n}\r\n\r\n.fa:last-child {\r\n  margin-right: 0;\r\n}\r\n\r\n.fa:hover {\r\n  opacity: 0.7;\r\n}\r\n\r\n.fa-envelope-o {\r\n  width: 172px;\r\n  padding: 19px 20px 19px 20px;\r\n  background: #0064B4;\r\n  color: white;\r\n}\r\n\r\n.fa-facebook {\r\n  background: #3B5998;\r\n  color: white;\r\n}\r\n\r\n.fa-twitter {\r\n  background: #55ACEE;\r\n  color: white;\r\n}\r\n\r\n.fa-instagram {\r\n  background: #125688;\r\n  color: white;\r\n}\r\n\r\n.fa-linkedin {\r\n  background: #007bb5;\r\n  color: white;\r\n}\r\n\r\n.contact {\r\n  margin-right: 100px;\r\n}\r\n\r\n.contact-icons {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.contact-icons a {\r\n  font-size: 22px;\r\n}\r\n\r\n.media-icons {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n}\r\n\r\n.media-icons a {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    .contact {\r\n      margin-right: 0;\r\n    }\r\n\r\n    .fa {\r\n      margin-right: 10px;\r\n    }\r\n}", ""]);
+exports.push([module.i, "span {\r\n  margin-left: 10px;\r\n  font-size: 20px;\r\n}\r\n\r\n.fa {\r\n  padding: 20px 20px;\r\n  font-size: 20px;\r\n  width: 20px;\r\n  text-decoration: none;\r\n  margin: 10px 20px 0 0;\r\n}\r\n\r\n.fa:last-child {\r\n  margin-right: 0;\r\n}\r\n\r\n.fa:hover {\r\n  opacity: 0.7;\r\n}\r\n\r\n.fa-envelope-o {\r\n  width: 172px;\r\n  padding: 19px 20px 19px 20px;\r\n  background: #0064B4;\r\n  color: white;\r\n}\r\n\r\n.fa-facebook {\r\n  background: #3B5998;\r\n  color: white;\r\n}\r\n\r\n.fa-twitter {\r\n  background: #55ACEE;\r\n  color: white;\r\n}\r\n\r\n.fa-instagram {\r\n  background: #125688;\r\n  color: white;\r\n}\r\n\r\n.fa-linkedin {\r\n  background: #007bb5;\r\n  color: white;\r\n}\r\n\r\n.contact {\r\n  margin-right: 100px;\r\n}\r\n\r\n.contact-icons {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n\r\n.contact-icons a {\r\n  font-size: 22px;\r\n}\r\n\r\n.media-icons {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n}\r\n\r\n.media-icons a {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n@media only screen and (max-width: 530px) {\r\n    .contact {\r\n      margin-right: 0;\r\n    }\r\n\r\n    .fa {\r\n      margin-right: 10px;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -774,7 +778,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);\r\n\r\n.modal-dialog {\r\n  padding-top: 10px;\r\n}\r\n\r\n.code-modal-container {\r\n  padding: 30px;\r\n  max-width: 300px;\r\n  width: 100% !important;\r\n  background-color: #F7F7F7;\r\n  margin: 0 auto;\r\n  border-radius: 2px;\r\n  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\r\n          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\r\n  overflow: hidden;\r\n  font-family: roboto;\r\n}\r\n\r\n.code-modal-container h1 {\r\n  text-align: center;\r\n  font-size: 1.5em;\r\n  font-family: \"roboto\";\r\n  color: #000;\r\n}\r\n\r\n.code-modal-container .btn {\r\n  width: 100%;\r\n  display: block;\r\n  margin-bottom: 10px;\r\n  position: relative;\r\n}\r\n\r\n.code-modal-container input[type=text] {\r\n  height: 44px;\r\n  font-size: 16px;\r\n  width: 100%;\r\n  margin-bottom: 10px;\r\n  -webkit-appearance: none;\r\n  background: #fff;\r\n  border: 1px solid #d9d9d9;\r\n  border-top: 1px solid #c0c0c0;\r\n  /* border-radius: 2px; */\r\n  padding: 0 8px;\r\n  -webkit-box-sizing: border-box;\r\n          box-sizing: border-box;\r\n  -moz-box-sizing: border-box;\r\n  font-family: \"roboto\";\r\n}\r\n\r\n.code-modal-container input[type=text]:hover {\r\n  border: 1px solid #b9b9b9;\r\n  border-top: 1px solid #a0a0a0;\r\n  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);\r\n  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);\r\n}\r\n\r\n.code-modal {\r\n  text-align: center;\r\n  font-size: 14px;\r\n  font-family: 'Arial', sans-serif;\r\n  font-weight: 700;\r\n  height: 36px;\r\n  padding: 0 8px;\r\n}\r\n\r\n.code-modal-submit {\r\n  color: #fff;\r\n  text-shadow: 0 1px rgba(0,0,0,0.1);\r\n  background-color: #4d90fe;\r\n  padding: 17px 0px;\r\n  font-family: roboto;\r\n  font-size: 14px;\r\n  text-align: center;\r\n}\r\n\r\n.code-modal-submit:hover {\r\n  text-shadow: 0 1px rgba(0,0,0,0.3);\r\n  background-color: #357ae8;\r\n}\r\n", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);\r\n\r\n.modal-dialog {\r\n  padding-top: 10px;\r\n}\r\n\r\n.code-modal-container {\r\n  padding: 30px;\r\n  max-width: 300px;\r\n  width: 100% !important;\r\n  background-color: #F7F7F7;\r\n  margin: 0 auto;\r\n  border-radius: 2px;\r\n  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);\r\n          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);\r\n  overflow: hidden;\r\n  font-family: roboto, sans-serif;\r\n}\r\n\r\n.code-modal-container h1 {\r\n  text-align: center;\r\n  font-size: 1.5em;\r\n  font-family: \"roboto\", sans-serif;\r\n  color: #000;\r\n}\r\n\r\n.code-modal-container .btn {\r\n  width: 100%;\r\n  display: block;\r\n  margin-bottom: 10px;\r\n  position: relative;\r\n}\r\n\r\n.code-modal-container input[type=text] {\r\n  height: 44px;\r\n  font-size: 16px;\r\n  width: 100%;\r\n  margin-bottom: 10px;\r\n  -webkit-appearance: none;\r\n  background: #fff;\r\n  border: 1px solid #d9d9d9;\r\n  border-top: 1px solid #c0c0c0;\r\n  /* border-radius: 2px; */\r\n  padding: 0 8px;\r\n  -webkit-box-sizing: border-box;\r\n          box-sizing: border-box;\r\n  -moz-box-sizing: border-box;\r\n  font-family: \"roboto\", sans-serif;\r\n}\r\n\r\n.code-modal-container input[type=text]:hover {\r\n  border: 1px solid #b9b9b9;\r\n  border-top: 1px solid #a0a0a0;\r\n  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);\r\n  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);\r\n}\r\n\r\n.code-modal {\r\n  text-align: center;\r\n  font-size: 14px;\r\n  font-family: 'Arial', sans-serif;\r\n  font-weight: 700;\r\n  height: 36px;\r\n  padding: 0 8px;\r\n}\r\n\r\n.code-modal-submit {\r\n  color: #fff;\r\n  text-shadow: 0 1px rgba(0,0,0,0.1);\r\n  background-color: #4d90fe;\r\n  padding: 17px 0;\r\n  font-family: roboto, sans-serif;\r\n  font-size: 14px;\r\n  text-align: center;\r\n}\r\n\r\n.code-modal-submit:hover {\r\n  text-shadow: 0 1px rgba(0,0,0,0.3);\r\n  background-color: #357ae8;\r\n}\r\n", ""]);
 
 // exports
 
@@ -798,6 +802,7 @@ module.exports = "<div class=\"modal fade\">\r\n  <div class=\"modal-dialog\">\r
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeModalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_code_service__ = __webpack_require__("../../../../../src/app/services/code.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -809,9 +814,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var CodeModalComponent = /** @class */ (function () {
-    function CodeModalComponent(codeService) {
+    function CodeModalComponent(codeService, store) {
         this.codeService = codeService;
+        this.store = store;
         this.sendCode = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
     CodeModalComponent.prototype.ngOnInit = function () {
@@ -821,6 +828,8 @@ var CodeModalComponent = /** @class */ (function () {
         this.codeService.validateCode(keyCode).subscribe(function (v) {
             if (v)
                 _this.sendCode.emit(v);
+        }, function (err) {
+            _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: err.error });
         });
     };
     CodeModalComponent.prototype.skip = function () {
@@ -836,7 +845,7 @@ var CodeModalComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/game/code-modal/code-modal.component.html"),
             styles: [__webpack_require__("../../../../../src/app/game/code-modal/code-modal.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_code_service__["a" /* CodeService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_code_service__["a" /* CodeService */], __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["a" /* Store */]])
     ], CodeModalComponent);
     return CodeModalComponent;
 }());
@@ -1208,7 +1217,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/game/game.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header [disableImg]=\"true\"></app-header>\n<div *ngIf=\"!isReady else game\">\n  <app-code-modal (sendCode)=\"setCode($event)\"></app-code-modal>\n</div>\n<ng-template #game>\n  <app-game-display [code]=\"code\"></app-game-display>\n</ng-template>\n"
+module.exports = "<app-header [disableImg]=\"true\"></app-header>\r\n<div *ngIf=\"!isReady; else game\">\r\n  <app-code-modal (sendCode)=\"setCode($event)\"></app-code-modal>\r\n</div>\r\n<ng-template #game>\r\n  <app-game-display [code]=\"code\"></app-game-display>\r\n</ng-template>\r\n"
 
 /***/ }),
 
@@ -1261,7 +1270,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".modal {\r\n  min-height: 75px;\r\n  width: 150px;\r\n  background-color: #fff;\r\n  z-index: 2;\r\n  opacity: 0;\r\n  padding: 10px;\r\n  -webkit-box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.75);\r\n  box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.75);\r\n\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  -webkit-transform: scale(0);\r\n          transform: scale(0);\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n  -webkit-transform-origin: center center;\r\n          transform-origin: center center;\r\n}\r\n\r\n.center {\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.question {\r\n  padding: 5px 0;\r\n  cursor: pointer;\r\n}\r\n\r\n.question:hover {\r\n  color: #4d90fe;\r\n}\r\n\r\n.question:not(:last-child) {\r\n  border-bottom: 1px solid #000;\r\n}\r\n", ""]);
+exports.push([module.i, ".modal {\r\n  min-height: 75px;\r\n  width: 150px;\r\n  background-color: #fff;\r\n  z-index: 2;\r\n  opacity: 0;\r\n  padding: 10px;\r\n  -webkit-box-shadow: 0 0 35px 10px rgba(0,0,0,0.75);\r\n  box-shadow: 0 0 35px 10px rgba(0,0,0,0.75);\r\n\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  -webkit-transform: scale(0);\r\n          transform: scale(0);\r\n  -webkit-transition: all 0.5s;\r\n  transition: all 0.5s;\r\n  -webkit-transform-origin: center center;\r\n          transform-origin: center center;\r\n}\r\n\r\n.center {\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.question {\r\n  padding: 5px 0;\r\n  cursor: pointer;\r\n}\r\n\r\n.question:hover {\r\n  color: #4d90fe;\r\n}\r\n\r\n.question:not(:last-child) {\r\n  border-bottom: 1px solid #000;\r\n}\r\n", ""]);
 
 // exports
 
@@ -1408,7 +1417,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"hamburger\"[ngClass]=\"visible ? 'open' : ''\" (click)=\"toggleNav()\">\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n</div>\r\n\r\n<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn() else isAuth\">\r\n    <input type=\"search\" title=\"search\" placeholder=\"Zoeken... \" #searchBar/><!--\r\n --><a (click)=\"toggleSearchBar()\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></a><!--\r\n --><a [routerLink]=\"['/register']\"><i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i> Registreren</a><!--\r\n --><a [routerLink]=\"['/login']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Aanmelden</a>\r\n\t</div>\r\n\t<ng-template #isAuth>\r\n    <a [routerLink]=\"['/user']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> {{name}}</a><!--\r\n --><a (click)=\"logout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\r\n\t</ng-template>\r\n</div>\r\n\r\n\r\n<div class=\"banner\" [ngClass]=\"disableImg ? 'height-zero' : ''\">\r\n\t<img class=\"logo\" src=\"assets/images/Logo_Antwerpen.jpg\">\r\n\t<div class=\"background\" [ngClass]=\"disableImg ? 'height-zero' : ''\" ></div>\r\n  <a [routerLink]=\"['/portal']\"><h1>Stop seksuele intimidatie</h1></a>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"botnav\" [ngClass]=\"visible ? 'show' : ''\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat is seksuele intimidatie?</a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat kan je zelf doen?</a>\r\n  <a [routerLink]=\"['/feiten']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Feiten</a>\r\n  <a [routerLink]=\"['/contact']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Contact</a>\r\n  <a [routerLink]=\"['/game']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Game</a>\r\n</div>\r\n\r\n<!-- <div class=\"whiteSpace\" [ngClass]=\"!visiable ? 'whitespace' : ''\"> -->\r\n"
+module.exports = "<div id=\"hamburger\"[ngClass]=\"visible ? 'open' : ''\" (click)=\"toggleNav()\">\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n  <span class=\"burger-span\"></span>\r\n</div>\r\n\r\n<div class=\"topnav\">\r\n\t<div *ngIf=\"!authService.loggedIn(); else isAuth\">\r\n    <input type=\"search\" title=\"search\" placeholder=\"Zoeken... \" #searchBar/><!--\r\n --><a (click)=\"toggleSearchBar()\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></a><!--\r\n --><a [routerLink]=\"['/register']\"><i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i> Registreren</a><!--\r\n --><a [routerLink]=\"['/login']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Aanmelden</a>\r\n\t</div>\r\n\t<ng-template #isAuth>\r\n    <a [routerLink]=\"['/user']\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i> {{name}}</a><!--\r\n --><a (click)=\"logout()\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Logout</a>\r\n\t</ng-template>\r\n</div>\r\n\r\n\r\n<div class=\"banner\" [ngClass]=\"disableImg ? 'height-zero' : ''\">\r\n\t<img class=\"logo\" src=\"assets/images/Logo_Antwerpen.jpg\">\r\n\t<div class=\"background\" [ngClass]=\"disableImg ? 'height-zero' : ''\" ></div>\r\n  <a [routerLink]=\"['/portal']\"><h1>Stop seksuele intimidatie</h1></a>\r\n</div>\r\n\r\n\r\n\r\n<div class=\"botnav\" [ngClass]=\"visible ? 'show' : ''\">\r\n  <a [routerLink]=\"['/wat-is-seksuele-intimidatie']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat is seksuele intimidatie?</a>\r\n  <a [routerLink]=\"['/wat-kan-je-zelf-doen']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Wat kan je zelf doen?</a>\r\n  <a [routerLink]=\"['/feiten']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Feiten</a>\r\n  <a [routerLink]=\"['/contact']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Contact</a>\r\n  <a [routerLink]=\"['/game']\" routerLinkActive=\"active\" (click)=\"toggleNav()\">Game</a>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1437,8 +1446,6 @@ var HeaderComponent = /** @class */ (function () {
         var _this = this;
         this.authService = authService;
         this.store = store;
-        this.name = 'User';
-        this.visible = false;
         this.disableImg = false;
         store.select('responsiveNagivation').subscribe(function (v) { return _this.visible = v; });
         this.authService.authObj.subscribe(function (v) {
@@ -1479,8 +1486,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/header/header.component.html"),
             styles: [__webpack_require__("../../../../../src/app/header/header.component.css")],
             animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["trigger"])('openNavigation', [
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["state"])('0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["style"])({ transform: 'translateX(-50%) translateY(-50%) scale(0)', opacity: '0' })),
+                Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["trigger"])('openNavigation', [Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["state"])('0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["style"])({ transform: 'translateX(-50%) translateY(-50%) scale(0)', opacity: '0' })),
                     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["state"])('1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["style"])({ transform: 'translateX(-50%) translateY(-50%) scale(1)', opacity: '1' })),
                     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["transition"])('0 => 1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["animate"])('300ms ease-in')),
                     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["transition"])('1 => 0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["animate"])('300ms ease-out')),
@@ -1809,7 +1815,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".button {\r\n    font-size: 1rem;\r\n    line-height: 1.4em;\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n    padding-top: .5rem;\r\n    padding-bottom: .5rem;\r\n    transition: background .25s ease-out;\r\n    -moz-transition: background .25s ease-out;\r\n    -webkit-transition: background .25s ease-out;\r\n    -o-transition: background .25s ease-out;\r\n    -ms-transistion: background .25s ease-out;\r\n    background: #0064B4;\r\n    -webkit-appearance: none;\r\n    -moz-appearance: none;\r\n    -ms-appearance: none;\r\n    -o-appearance: none;\r\n    appearance: none;\r\n    border: 0;\r\n    color: #fff;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: 700;\r\n    min-height: 3rem;\r\n    width: 100px;\r\n    margin-bottom: .75rem;\r\n    margin-top: 0;\r\n    outline: none;\r\n    overflow: hidden;\r\n    padding-left: 1.5rem;\r\n    padding-right: 1.5rem;\r\n    font-family: \"Sun Regular\",\"Helvetica Neue\",Helvetica,Arial,Georgia,Sans-serif;\r\n    position: relative;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.button span {\r\n  margin-right: 5px;\r\n}\r\n\r\n.logo {\r\n  margin: 0;\r\n}\r\n\r\n.login-container {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n  -webkit-box-pack: start;\r\n      -ms-flex-pack: start;\r\n          justify-content: flex-start;\r\n  -webkit-box-align: baseline;\r\n      -ms-flex-align: baseline;\r\n          align-items: baseline;\r\n  margin-top: 48px;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.login-logo {\r\n  width: 14%;\r\n}\r\n\r\n.login-info {\r\n  width: 21%;\r\n  margin-right: 2em;\r\n}\r\n\r\n.login-form {\r\n  width: 65%;\r\n  min-height: calc(100vh - 9.10rem - 50px);\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  background: #F3F3F5;\r\n  padding: 4.55rem 1.5rem;\r\n}\r\n\r\nform {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n}\r\n\r\nform a {\r\n  font-size: 14px;\r\n  margin-bottom: 2em;\r\n}\r\n\r\nh2 {\r\n  margin-top: 0;\r\n}\r\n\r\ninput {\r\n  width: 75%;\r\n  height: 30px;\r\n  padding: .5rem 1rem;\r\n  margin-bottom: .5em;\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n  }\r\n\r\n  .topnav {\r\n  \ttop: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 15px;\r\n}\r\n\r\n.topnav a {\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tpadding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.lead a {\r\n  margin-right: 0.75rem;\r\n}\r\n\r\n.topborder {\r\n  width: 78%;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n  padding-top: 10px;\r\n  margin-top: 50px;\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    .login-info {\r\n      width: 50%;\r\n      margin-left: 60px;\r\n    }\r\n\r\n    .login-container {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n    }\r\n\r\n    .login-form {\r\n      width: 100%;\r\n      padding: 1.5rem 0 0 0;\r\n    }\r\n\r\n    .login-form p {\r\n      margin-left: 60px;\r\n    }\r\n\r\n    form {\r\n      margin-left: 60px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .login-info {\r\n      width: 70%;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".button {\r\n    font-size: 1rem;\r\n    line-height: 1.4em;\r\n    margin-top: 0;\r\n    padding: .5rem 1.5rem;\r\n    transition: background .25s ease-out;\r\n    -moz-transition: background .25s ease-out;\r\n    -webkit-transition: background .25s ease-out;\r\n    -o-transition: background .25s ease-out;\r\n    -ms-transistion: background .25s ease-out;\r\n    background: #0064B4;\r\n    -webkit-appearance: none;\r\n    -moz-appearance: none;\r\n    -ms-appearance: none;\r\n    -o-appearance: none;\r\n    appearance: none;\r\n    border: 0;\r\n    color: #fff;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: 700;\r\n    min-height: 3rem;\r\n    width: 100px;\r\n    margin-bottom: .75rem;\r\n    outline: none;\r\n    overflow: hidden;\r\n    font-family: \"Sun Regular\",\"Helvetica Neue\",Helvetica,Arial,Georgia,Sans-serif;\r\n    position: relative;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.button span {\r\n  margin-right: 5px;\r\n}\r\n\r\n.logo {\r\n  margin: 0;\r\n}\r\n\r\n.login-container {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n  -webkit-box-pack: start;\r\n      -ms-flex-pack: start;\r\n          justify-content: flex-start;\r\n  -webkit-box-align: baseline;\r\n      -ms-flex-align: baseline;\r\n          align-items: baseline;\r\n  margin-top: 48px;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.login-logo {\r\n  width: 14%;\r\n}\r\n\r\n.login-info {\r\n  width: 21%;\r\n  margin-right: 2em;\r\n}\r\n\r\n.login-form {\r\n  width: 65%;\r\n  min-height: calc(100vh - 9.10rem - 50px);\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  background: #F3F3F5;\r\n  padding: 4.55rem 1.5rem;\r\n}\r\n\r\nform {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n}\r\n\r\nform a {\r\n  font-size: 14px;\r\n  margin-bottom: 2em;\r\n}\r\n\r\nh2 {\r\n  margin-top: 0;\r\n}\r\n\r\ninput {\r\n  width: 75%;\r\n  height: 30px;\r\n  padding: .5rem 1rem;\r\n  margin-bottom: .5em;\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n  }\r\n\r\n  .topnav {\r\n  \ttop: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 15px;\r\n}\r\n\r\n.topnav a {\r\n\ttext-decoration: none;\r\n\tcolor: #fff;\r\n\tpadding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.lead a {\r\n  margin-right: 0.75rem;\r\n}\r\n\r\n.topborder {\r\n  width: 78%;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n  padding-top: 10px;\r\n  margin-top: 50px;\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    .login-info {\r\n      width: 50%;\r\n      margin-left: 60px;\r\n    }\r\n\r\n    .login-container {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n    }\r\n\r\n    .login-form {\r\n      width: 100%;\r\n      padding: 1.5rem 0 0 0;\r\n    }\r\n\r\n    .login-form p {\r\n      margin-left: 60px;\r\n    }\r\n\r\n    form {\r\n      margin-left: 60px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .login-info {\r\n      width: 70%;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -1947,7 +1953,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".button {\r\n    font-size: 1rem;\r\n    line-height: 1.4em;\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n    padding-top: .5rem;\r\n    padding-bottom: .5rem;\r\n    transition: background .25s ease-out;\r\n    -moz-transition: background .25s ease-out;\r\n    -webkit-transition: background .25s ease-out;\r\n    -o-transition: background .25s ease-out;\r\n    -ms-transistion: background .25s ease-out;\r\n    background: #0064B4;\r\n    -webkit-appearance: none;\r\n    -moz-appearance: none;\r\n    -ms-appearance: none;\r\n    -o-appearance: none;\r\n    appearance: none;\r\n    border: 0;\r\n    color: #fff;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: 700;\r\n    min-height: 3rem;\r\n    width: 100px;\r\n    margin-bottom: .75rem;\r\n    margin-top: 0;\r\n    outline: none;\r\n    overflow: hidden;\r\n    padding-left: 1.5rem;\r\n    padding-right: 1.5rem;\r\n    font-family: \"Sun Regular\",\"Helvetica Neue\",Helvetica,Arial,Georgia,Sans-serif;\r\n    position: relative;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.button span {\r\n  margin-right: 5px;\r\n}\r\n\r\n.logo {\r\n  margin: 0;\r\n}\r\n\r\n.register-container {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n  -webkit-box-pack: start;\r\n      -ms-flex-pack: start;\r\n          justify-content: flex-start;\r\n  -webkit-box-align: baseline;\r\n      -ms-flex-align: baseline;\r\n          align-items: baseline;\r\n  margin-top: 48px;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.register-logo {\r\n  width: 14%;\r\n}\r\n\r\n.register-info {\r\n  width: 21%;\r\n  margin-right: 2em;\r\n}\r\n\r\n.register-form {\r\n  width: 65%;\r\n  min-height: calc(100vh - 9.10rem - 50px);\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  background: #F3F3F5;\r\n  padding: 4.55rem 1.5rem;\r\n}\r\n\r\nform {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n}\r\n\r\nh2 {\r\n  margin-top: 0;\r\n}\r\n\r\ninput {\r\n  width: 75%;\r\n  height: 30px;\r\n  padding: .5rem 1rem;\r\n  margin-bottom: 2em;\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n  }\r\n\r\n  .topnav {\r\n    top: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n  position: absolute;\r\n  right: 0;\r\n  top: 15px;\r\n}\r\n\r\n.topnav a {\r\n  text-decoration: none;\r\n  color: #fff;\r\n  padding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.lead a {\r\n  margin-right: 0.75rem;\r\n}\r\n\r\n.topborder {\r\n  width: 78%;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n  padding-top: 10px;\r\n  margin-top: 50px;\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    .register-info {\r\n      width: 50%;\r\n      margin-left: 60px;\r\n    }\r\n\r\n    .register-container {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n    }\r\n\r\n    .register-form {\r\n      width: 100%;\r\n      padding: 1.5rem 0 0 0;\r\n    }\r\n\r\n    .register-form p {\r\n      margin-left: 60px;\r\n    }\r\n\r\n    form {\r\n      margin-left: 60px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .register-info {\r\n      width: 70%;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".button {\r\n    font-size: 1rem;\r\n    line-height: 1.4em;\r\n    margin-top: 0;\r\n  padding: .5rem 1.5rem;\r\n    transition: background .25s ease-out;\r\n    -moz-transition: background .25s ease-out;\r\n    -webkit-transition: background .25s ease-out;\r\n    -o-transition: background .25s ease-out;\r\n    -ms-transistion: background .25s ease-out;\r\n    background: #0064B4;\r\n    -webkit-appearance: none;\r\n    -moz-appearance: none;\r\n    -ms-appearance: none;\r\n    -o-appearance: none;\r\n    appearance: none;\r\n    border: 0;\r\n    color: #fff;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    font-weight: 700;\r\n    min-height: 3rem;\r\n    width: 100px;\r\n    margin-bottom: .75rem;\r\n    outline: none;\r\n    overflow: hidden;\r\n    font-family: \"Sun Regular\",\"Helvetica Neue\",Helvetica,Arial,Georgia,Sans-serif;\r\n    position: relative;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.button span {\r\n  margin-right: 5px;\r\n}\r\n\r\n.logo {\r\n  margin: 0;\r\n}\r\n\r\n.register-container {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n  -webkit-box-pack: start;\r\n      -ms-flex-pack: start;\r\n          justify-content: flex-start;\r\n  -webkit-box-align: baseline;\r\n      -ms-flex-align: baseline;\r\n          align-items: baseline;\r\n  margin-top: 48px;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n}\r\n\r\n.register-logo {\r\n  width: 14%;\r\n}\r\n\r\n.register-info {\r\n  width: 21%;\r\n  margin-right: 2em;\r\n}\r\n\r\n.register-form {\r\n  width: 65%;\r\n  min-height: calc(100vh - 9.10rem - 50px);\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  background: #F3F3F5;\r\n  padding: 4.55rem 1.5rem;\r\n}\r\n\r\nform {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n}\r\n\r\nh2 {\r\n  margin-top: 0;\r\n}\r\n\r\ninput {\r\n  width: 75%;\r\n  height: 30px;\r\n  padding: .5rem 1rem;\r\n  margin-bottom: 2em;\r\n}\r\n\r\n@-moz-document url-prefix() {\r\n  .background {\r\n    margin-top: -82px !important;\r\n  }\r\n\r\n  .topnav {\r\n    top: 13px !important;\r\n  }\r\n}\r\n\r\n.topnav {\r\n  position: absolute;\r\n  right: 0;\r\n  top: 15px;\r\n}\r\n\r\n.topnav a {\r\n  text-decoration: none;\r\n  color: #fff;\r\n  padding: 15px 20px;\r\n  background: #0064B4;\r\n  border-right: 4px solid rgba(0,0,0,0.2);\r\n  -webkit-transition: background .25s ease-out;\r\n  transition: background .25s ease-out;\r\n  font-weight: bold;\r\n}\r\n\r\n.topnav a:last-child {\r\n  border-right-width: 2px;\r\n}\r\n\r\n.topnav a:hover {\r\n  background: #003f72;\r\n}\r\n\r\n.lead a {\r\n  margin-right: 0.75rem;\r\n}\r\n\r\n.topborder {\r\n  width: 78%;\r\n  border-top: 1px solid rgba(127,127,127,0.3);\r\n  padding-top: 10px;\r\n  margin-top: 50px;\r\n}\r\n\r\n@media only screen and (max-width: 940px) {\r\n    .register-info {\r\n      width: 50%;\r\n      margin-left: 60px;\r\n    }\r\n\r\n    .register-container {\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n          -ms-flex-direction: column;\r\n              flex-direction: column;\r\n    }\r\n\r\n    .register-form {\r\n      width: 100%;\r\n      padding: 1.5rem 0 0 0;\r\n    }\r\n\r\n    .register-form p {\r\n      margin-left: 60px;\r\n    }\r\n\r\n    form {\r\n      margin-left: 60px;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width: 640px) {\r\n    .register-info {\r\n      width: 70%;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -2066,15 +2072,24 @@ var AuthService = /** @class */ (function () {
         }, function (err) {
             console.log(err);
             if (err.status === 404 || err.status === 403) {
-                _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: "No user found for given credentials." });
+                _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: 'No user found for given credentials.' });
             }
             else {
-                _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: "Oops. That login failed. Please try again." });
+                _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: 'Oops. That login failed. Please try again.' });
             }
         });
     };
     AuthService.prototype.auth = function (res) {
-        this.store.dispatch({ type: 'CREATE_AUTH', payload: { id: res.user.id, username: res.user.email, firstname: res.user.firstname, lastname: res.user.lastname, school: res.user.school } });
+        this.store.dispatch({
+            type: 'CREATE_AUTH',
+            payload: {
+                id: res.user.id,
+                username: res.user.email,
+                firstname: res.user.firstname,
+                lastname: res.user.lastname,
+                school: res.user.school
+            }
+        });
         localStorage.setItem('token', res.token);
         localStorage.setItem('user', JSON.stringify({ user: res.user.email, id: res.user.id }));
     };
@@ -2159,6 +2174,8 @@ var CodeService = /** @class */ (function () {
             _this.store.dispatch({ type: 'CREATE_CODES', payload: v });
             // Ready state will be set True
             _this.store.dispatch({ type: 'CODES_READY' });
+        }, function (err) {
+            _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: err.error });
         });
     };
     CodeService.prototype.validateCode = function (keyCode) {
@@ -2180,17 +2197,18 @@ var CodeService = /** @class */ (function () {
             headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpHeaders */]().set('x-auth-token', "" + token)
         }).subscribe(function (v) {
             _this.deleteCodeInStore(v);
+        }, function (err) {
+            _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: err.error });
         });
     };
     CodeService.prototype.editCode = function (args) {
-        var _this = this;
-        var token = localStorage.getItem('token');
-        // URL needs to be changed + functionality added on API server
-        this.http.put("http://project.api/code/" + args['codeName'] + "/" + args['keyCode'] + "/" + args['id'], {
-            headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpHeaders */]().set('x-auth-token', "" + token)
-        }).subscribe(function (v) {
-            _this.editCodeInStore(v);
-        });
+        // const token = localStorage.getItem('token');
+        // // URL needs to be changed + functionality added on API server
+        // this.http.put(`http://project.api/code/${args['codeName']}/${args['keyCode']}/${args['id']}`, {
+        //   headers: new HttpHeaders().set('x-auth-token', `${token}`)
+        // }).subscribe((v: any) => {
+        //   this.editCodeInStore(v);
+        // });
     };
     CodeService.prototype.addCodeInStore = function (code) {
         this.store.dispatch({ type: 'ADD_CODES', payload: code });
@@ -2413,6 +2431,7 @@ module.exports = "<div class=\"container\">\r\n\r\n  <div class=\"form-container
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__("../../../../../src/app/services/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_code_service__ = __webpack_require__("../../../../../src/app/services/code.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2426,11 +2445,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AddCodeModalComponent = /** @class */ (function () {
-    function AddCodeModalComponent(fb, authService, codeService) {
+    function AddCodeModalComponent(fb, authService, codeService, store) {
         this.fb = fb;
         this.authService = authService;
         this.codeService = codeService;
+        this.store = store;
         this.close = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.createForm();
     }
@@ -2445,7 +2466,12 @@ var AddCodeModalComponent = /** @class */ (function () {
     AddCodeModalComponent.prototype.addCode = function () {
         var _this = this;
         this.codeService.addCode({ name: this.addCodeForm.value.name, keyCode: this.addCodeForm.value.keyCode, id: this.authService.user.id })
-            .subscribe(function (v) { _this.codeService.addCodeInStore(v); _this.closeModal(); });
+            .subscribe(function (v) {
+            _this.codeService.addCodeInStore(v);
+            _this.closeModal();
+        }, function (err) {
+            _this.store.dispatch({ type: 'SET_ERROR_MESSAGE', payload: err.error });
+        });
     };
     AddCodeModalComponent.prototype.closeModal = function () {
         this.close.emit();
@@ -2460,7 +2486,7 @@ var AddCodeModalComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/user/add-code-modal/add-code-modal.component.html"),
             styles: [__webpack_require__("../../../../../src/app/user/add-code-modal/add-code-modal.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__services_code_service__["a" /* CodeService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_3__services_code_service__["a" /* CodeService */], __WEBPACK_IMPORTED_MODULE_4__ngrx_store__["a" /* Store */]])
     ], AddCodeModalComponent);
     return AddCodeModalComponent;
 }());
@@ -2802,7 +2828,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/user/user.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-user-header user=\"user\"></app-user-header>\r\n<app-add-code-modal (close)=\"closeAddingModal()\" *ngIf=\"isAddingCode\"></app-add-code-modal>\r\n<app-edit-code-modal (close)=\"closeEditingModal()\" *ngIf=\"isEditingCode\"></app-edit-code-modal>\r\n\r\n<main *ngIf=\"!stats else showStats\">\r\n  <div class=\"sidebar\" [ngStyle]=\"{'z-index': isAddingCode ? '-1' : '0'}\">\r\n    <a [ngClass]=\"page == 'details' ? 'active' : ''\" (click)=\"setPage('details')\">Gegevens <i class=\"fa fa-chevron-right\"></i></a>\r\n    <a [ngClass]=\"page == 'codes' ? 'active' : ''\" (click)=\"setPage('codes')\">Codes <i class=\"fa fa-chevron-right\"></i></a>\r\n  </div>\r\n\r\n  <div class=\"feed-container\">\r\n    <app-user-details *ngIf=\"page == 'details'\"></app-user-details>\r\n\r\n    <table class=\"codes\" *ngIf=\"page == 'codes' && codes.length > 0\">\r\n      <thead>\r\n      <tr>\r\n        <th>Naam</th>\r\n        <th>Code</th>\r\n        <th class=\"delete-row\">Acties</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody class=\"codes\">\r\n        <tr *ngFor=\"let code of codes\">\r\n          <td (click)=\"getQuestions(code.keyCode)\">{{code.name}}</td>\r\n          <td>{{code.keyCode}}</td>\r\n          <td class=\"delete-row\">\r\n            <span class=\"fa fa-eye\" (click)=\"getQuestions(code.keyCode)\"></span>\r\n            <span class=\"fa fa-cog\" (click)=\"openEditingModal(code)\"></span>\r\n            <span class=\"fa fa-times\" (click)=\"deleteCode(code._id)\"></span>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n\r\n    <table class=\"no-codes\" *ngIf=\"page == 'codes' && codes.length < 1\">\r\n      <thead>\r\n      <tr>\r\n        <th>Codes</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>Geen codes gevonden</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n    <div class=\"add-code button\" *ngIf=\"page == 'codes'\" (click)=\"openAddingModal()\">Code toevoegen</div>\r\n  </div>\r\n</main>\r\n\r\n<ng-template #showStats>\r\n  <app-stats [results]=\"results\" (getQuestion)=\"getQuestion($event)\" (back)=\"closeStats()\"></app-stats>\r\n</ng-template>\r\n\r\n<!-- editCode({id:code.id, codeName:code.name, keyCode:code.keyCode}) -->\r\n"
+module.exports = "<app-user-header user=\"user\"></app-user-header>\r\n<app-error-message></app-error-message>\r\n<app-add-code-modal (close)=\"closeAddingModal()\" *ngIf=\"isAddingCode\"></app-add-code-modal>\r\n<app-edit-code-modal (close)=\"closeEditingModal()\" *ngIf=\"isEditingCode\"></app-edit-code-modal>\r\n\r\n<main *ngIf=\"!stats; else showStats\">\r\n  <div class=\"sidebar\" [ngStyle]=\"{'z-index': isAddingCode ? '-1' : '0'}\">\r\n    <a [ngClass]=\"page == 'details' ? 'active' : ''\" (click)=\"setPage('details')\">Gegevens <i class=\"fa fa-chevron-right\"></i></a>\r\n    <a [ngClass]=\"page == 'codes' ? 'active' : ''\" (click)=\"setPage('codes')\">Codes <i class=\"fa fa-chevron-right\"></i></a>\r\n  </div>\r\n\r\n  <div class=\"feed-container\">\r\n    <app-user-details *ngIf=\"page == 'details'\"></app-user-details>\r\n\r\n    <table class=\"codes\" *ngIf=\"page == 'codes' && codes.length > 0\">\r\n      <thead>\r\n      <tr>\r\n        <th>Naam</th>\r\n        <th>Code</th>\r\n        <th class=\"delete-row\">Acties</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody class=\"codes\">\r\n        <tr *ngFor=\"let code of codes\">\r\n          <td (click)=\"getQuestions(code.keyCode)\">{{code.name}}</td>\r\n          <td>{{code.keyCode}}</td>\r\n          <td class=\"delete-row\">\r\n            <span class=\"fa fa-eye\" (click)=\"getQuestions(code.keyCode)\"></span>\r\n            <span class=\"fa fa-cog\" (click)=\"openEditingModal(code)\"></span>\r\n            <span class=\"fa fa-times\" (click)=\"deleteCode(code._id)\"></span>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n\r\n    <table class=\"no-codes\" *ngIf=\"page == 'codes' && codes.length < 1\">\r\n      <thead>\r\n      <tr>\r\n        <th>Codes</th>\r\n      </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>Geen codes gevonden</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n    <div class=\"add-code button\" *ngIf=\"page == 'codes'\" (click)=\"openAddingModal()\">Code toevoegen</div>\r\n  </div>\r\n</main>\r\n\r\n<ng-template #showStats>\r\n  <app-stats [results]=\"results\" (getQuestion)=\"getQuestion($event)\" (back)=\"closeStats()\"></app-stats>\r\n</ng-template>\r\n\r\n<!-- editCode({id:code.id, codeName:code.name, keyCode:code.keyCode}) -->\r\n"
 
 /***/ }),
 
@@ -2843,8 +2869,8 @@ var UserComponent = /** @class */ (function () {
         this.isAddingCode = false;
         this.isEditingCode = false;
         this.results = [{
-                "name": "",
-                "value": 0
+                'name': '',
+                'value': 0
             }];
         this.stats = false;
         store.select('codes').filter(function (v) { return v != null; }).subscribe(function (v) { _this.codes = v.codes; });
@@ -2922,12 +2948,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__user_details_user_details_component__ = __webpack_require__("../../../../../src/app/user/user-details/user-details.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__edit_code_modal_edit_code_modal_component__ = __webpack_require__("../../../../../src/app/user/edit-code-modal/edit-code-modal.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__stats_stats_component__ = __webpack_require__("../../../../../src/app/user/stats/stats.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__error_message_error_message_component__ = __webpack_require__("../../../../../src/app/error-message/error-message.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -2961,9 +2989,10 @@ var UserModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_8__add_code_modal_add_code_modal_component__["a" /* AddCodeModalComponent */],
                 __WEBPACK_IMPORTED_MODULE_9__user_details_user_details_component__["a" /* UserDetailsComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__edit_code_modal_edit_code_modal_component__["a" /* EditCodeModalComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__stats_stats_component__["a" /* StatsComponent */]
+                __WEBPACK_IMPORTED_MODULE_11__stats_stats_component__["a" /* StatsComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__error_message_error_message_component__["a" /* ErrorMessageComponent */]
             ],
-            exports: [__WEBPACK_IMPORTED_MODULE_6__user_header_user_header_component__["a" /* UserHeaderComponent */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_6__user_header_user_header_component__["a" /* UserHeaderComponent */], __WEBPACK_IMPORTED_MODULE_12__error_message_error_message_component__["a" /* ErrorMessageComponent */]],
             providers: [__WEBPACK_IMPORTED_MODULE_7__services_code_service__["a" /* CodeService */]]
         })
     ], UserModule);
